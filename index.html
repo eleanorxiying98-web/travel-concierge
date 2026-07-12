@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eleanor & Evan | Guest Concierge</title>
+
+    <meta name="theme-color" content="#f8f4ed">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="page-wrapper">
+
+    <!-- ===========================
+         SEARCH SCREEN
+    ============================ -->
+
+    <section id="searchScreen" class="paper active">
+
+        <div class="paper-inner">
+
+            <img
+                src="images/logo.png"
+                class="logo"
+                alt="Eleanor & Evan Logo">
+
+            <div class="letterhead">
+
+                <h3>ELEANOR & EVAN</h3>
+
+                <p>19 December 2026</p>
+
+            </div>
+
+            <hr>
+
+            <h1>Your Travel Itinerary</h1>
+
+            <p class="intro">
+
+                We've thoughtfully prepared your accommodation and transport
+                arrangements to help make your journey to Khao Yai as seamless
+                as possible.
+
+            </p>
+
+            <p class="intro small">
+
+                Please enter your reservation name below to retrieve your
+                personalised travel itinerary.
+
+            </p>
+
+            <div class="lookup">
+
+                <input
+                    id="guestInput"
+                    type="text"
+                    placeholder="Reservation Name"
+                    autocomplete="off">
+
+                <button
+                    id="searchButton">
+
+                    Retrieve My Itinerary
+
+                </button>
+
+            </div>
+
+            <p id="errorMessage" class="error"></p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         ITINERARY SCREEN
+    ============================ -->
+
+    <section id="itineraryScreen" class="paper hidden">
+
+        <div class="paper-inner">
+
+            <img
+                src="images/logo.png"
+                class="logo"
+                alt="Logo">
+
+            <div class="letterhead">
+
+                <h3>ELEANOR & EVAN</h3>
+
+                <p>19 December 2026</p>
+
+            </div>
+
+            <hr>
+
+            <h1 id="welcomeName">
+
+                Welcome,
+
+            </h1>
+
+            <p class="intro">
+
+                Your accommodation and travel arrangements have been
+                thoughtfully prepared for your stay.
+
+            </p>
+
+
+
+            <!-- STAY -->
+
+            <div class="section">
+
+                <h2>Your Stay</h2>
+
+                <div class="hotel-name"
+                     id="hotelName">
+
+                </div>
+
+                <div class="stay-dates"
+                     id="stayDates">
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Check-in
+
+                    </span>
+
+                    <span id="checkin">
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Check-out
+
+                    </span>
+
+                    <span id="checkout">
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRANSPORT -->
+
+            <div class="section">
+
+                <h2>Your Transport</h2>
+
+                <div class="row">
+
+                    <span>
+
+                        Arrival
+
+                    </span>
+
+                    <span id="arrivalTransport">
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Departure
+
+                    </span>
+
+                    <span id="departureTransport">
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NOTES -->
+
+            <div class="section">
+
+                <h2>Notes</h2>
+
+                <p id="guestNotes">
+
+                    Exact pick-up point will be shared closer to the date.
+
+                </p>
+
+                <p class="planner-note">
+
+                    Should your travel plans change,
+                    please let us know so we can update your accommodation
+                    and transport arrangements accordingly.
+
+                </p>
+
+            </div>
+
+
+
+            <button
+                id="backButton">
+
+                Return to Guest Concierge
+
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
