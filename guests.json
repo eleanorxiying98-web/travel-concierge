@@ -1,0 +1,646 @@
+[
+  {
+    "name": "Kimberly Tan",
+    "hotel": "Grand Wara",
+    "room": 1.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Nick Maslin",
+    "hotel": "Grand Wara",
+    "room": 1.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Nicole Thio",
+    "hotel": "Grand Wara",
+    "room": 2.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Benedict Lim",
+    "hotel": "Grand Wara",
+    "room": 2.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Ethel Sim",
+    "hotel": "Grand Wara",
+    "room": 3.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Gabriel Tan",
+    "hotel": "Grand Wara",
+    "room": 3.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Immanuel Tan",
+    "hotel": "Grand Wara",
+    "room": 4.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Kishan Naidu",
+    "hotel": "Grand Wara",
+    "room": 4.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Merrill Shen ",
+    "hotel": "Grand Wara",
+    "room": 5.0,
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Cheryl Long",
+    "hotel": "Grand Wara",
+    "room": 5.0,
+    "arrival": "19 - TBC",
+    "departure": 20.0
+  },
+  {
+    "name": "Ryan Lim",
+    "hotel": "Grand Wara",
+    "room": 6.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Matilda Lim",
+    "hotel": "Grand Wara",
+    "room": 6.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Mikael Lim",
+    "hotel": "Grand Wara",
+    "room": 6.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jeddy Yew",
+    "hotel": "Grand Wara",
+    "room": 7.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Peiqi Yang",
+    "hotel": "Grand Wara",
+    "room": 7.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Karyn Ooi",
+    "hotel": "Grand Wara",
+    "room": 8.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Joshua Handover",
+    "hotel": "Grand Wara",
+    "room": 8.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Byron Yip",
+    "hotel": "Grand Wara",
+    "room": 9.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Roanne Ho",
+    "hotel": "Grand Wara",
+    "room": 9.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Louis Lim",
+    "hotel": "Grand Wara",
+    "room": 10.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Joel Koh",
+    "hotel": "Grand Wara",
+    "room": 10.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Donavan Tan",
+    "hotel": "Grand Wara",
+    "room": 10.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Alison Chiang",
+    "hotel": "Grand Wara",
+    "room": 11.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Shaun Heng",
+    "hotel": "Grand Wara",
+    "room": 11.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Shaun Ng",
+    "hotel": "Grand Wara",
+    "room": 12.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Ee Jean Kong",
+    "hotel": "Grand Wara",
+    "room": 12.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Anders Quah",
+    "hotel": "Grand Wara",
+    "room": 13.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Wilson Halim",
+    "hotel": "Grand Wara",
+    "room": 13.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Suhas Ramanan",
+    "hotel": "Grand Wara",
+    "room": 13.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jereld Lim",
+    "hotel": "Grand Wara",
+    "room": 14.0,
+    "arrival": 19.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Jingwen Soh",
+    "hotel": "Grand Wara",
+    "room": 14.0,
+    "arrival": 19.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Corneles D'silva",
+    "hotel": "Grand Wara",
+    "room": 15.0,
+    "arrival": "N/A",
+    "departure": "N/A"
+  },
+  {
+    "name": "Daniel Fok",
+    "hotel": "Grand Wara",
+    "room": 15.0,
+    "arrival": "N/A",
+    "departure": "N/A"
+  },
+  {
+    "name": "Ishaan Muley",
+    "hotel": "Grand Wara",
+    "room": 16.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Christopher Chin",
+    "hotel": "Grand Wara",
+    "room": 16.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Keith Phua",
+    "hotel": "Grand Wara",
+    "room": 17.0,
+    "arrival": "N/A",
+    "departure": "N/A"
+  },
+  {
+    "name": "Ian Chan",
+    "hotel": "Grand Wara",
+    "room": 17.0,
+    "arrival": "N/A",
+    "departure": "N/A"
+  },
+  {
+    "name": "Park Shan Huil",
+    "hotel": "Grand Wara",
+    "room": 18.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Yenny Chang",
+    "hotel": "Grand Wara",
+    "room": 18.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Savanna Gan",
+    "hotel": "Grand Wara",
+    "room": 19.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Joli Cheah",
+    "hotel": "Grand Wara",
+    "room": 19.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Desiree Lee",
+    "hotel": "Grand Wara",
+    "room": 19.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Yizhen Wong",
+    "hotel": "Grand Wara",
+    "room": 20.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Casey Grant",
+    "hotel": "Grand Wara",
+    "room": 20.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jamie Lee",
+    "hotel": "Grand Wara",
+    "room": 20.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Nicholas Lee",
+    "hotel": "Grand Wara",
+    "room": 21.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Lim Wei Ran",
+    "hotel": "Grand Wara",
+    "room": 21.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Marcus Ong",
+    "hotel": "Grand Wara",
+    "room": 22.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Xu Hui Chan",
+    "hotel": "Grand Wara",
+    "room": 22.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Keith Lim",
+    "hotel": "Grand Wara",
+    "room": 22.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Ng Wen Xin",
+    "hotel": "Grand Wara",
+    "room": 23.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Tan De Xun",
+    "hotel": "Grand Wara",
+    "room": 23.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Carmel Chuah",
+    "hotel": "N/A",
+    "room": "N/A",
+    "arrival": "N/A",
+    "departure": "N/A"
+  },
+  {
+    "name": "Yeng Hong Liang ",
+    "hotel": "N/A",
+    "room": "N/A",
+    "arrival": "N/A",
+    "departure": "N/A"
+  },
+  {
+    "name": "Eleanor Wong",
+    "hotel": "Movenpick",
+    "room": "Executive Deluxe 1 - 3107",
+    "arrival": 18.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Evan Soh",
+    "hotel": "Movenpick",
+    "room": "Executive Deluxe 1 - 3107",
+    "arrival": 18.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Eve Wong",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 1 - 3303",
+    "arrival": 18.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Simon Wong",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 1 - 3303",
+    "arrival": 18.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Evangelia Wong",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 1 - 3303",
+    "arrival": 18.0,
+    "departure": "N/A"
+  },
+  {
+    "name": "Irene Hwa",
+    "hotel": "Movenpick",
+    "room": "Executive Deluxe 4 - 3101",
+    "arrival": "N/A",
+    "departure": 20.0
+  },
+  {
+    "name": "Sin Ah Meng Lim",
+    "hotel": "Movenpick",
+    "room": "Executive Deluxe 4 - 3101",
+    "arrival": "N/A",
+    "departure": 20.0
+  },
+  {
+    "name": "Belinda Lim",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 2 - 3302",
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Soh Woon Peng",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 2 - 3302",
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Esther Soh",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 2 - 3302",
+    "arrival": 18.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Tun Lee Koh",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 2 - 3302",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Benjamin Lim",
+    "hotel": "Movenpick",
+    "room": "Deluxe King 1 - 3102",
+    "arrival": "N/A",
+    "departure": 20.0
+  },
+  {
+    "name": "Jerry Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jareth Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jaryl Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "See Hoe Lim",
+    "hotel": "Movenpick",
+    "room": "Deluxe King 3 - 3111",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Soh Lay Bing",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Goh Sian Choon",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Denise Goh",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Amanda Goh",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Ben Ng",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Glen Goh",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Peggy Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 1 - 3204",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Rosalind Tan",
+    "hotel": "Movenpick",
+    "room": "Deluxe King 3 - 3111",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Dean Lim",
+    "hotel": "Movenpick",
+    "room": "Deluxe King 2 - 3109",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Gennifer Tan",
+    "hotel": "Movenpick",
+    "room": "Deluxe King 2 - 3109",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Kian Ming Lam",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 3 - 3202",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Catherine Lam",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 3 - 3202",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jobyna Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Rafael Low",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jade Low",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jacob Low",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jewel Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Jillyn Teo",
+    "hotel": "Movenpick",
+    "room": "Penthouse 2 - 3201",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Nicole Lam",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 3 - 3202",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Ryan Lam",
+    "hotel": "Movenpick",
+    "room": "Ozone Suite 3 - 3202",
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Lawrence Yeow",
+    "hotel": "Movenpick",
+    "room": "Executive Deluxe 3 - 3110",
+    "arrival": "N/A",
+    "departure": 20.0
+  },
+  {
+    "name": "Makoto Arami",
+    "hotel": "Movenpick",
+    "room": "Executive Deluxe 3 - 3110",
+    "arrival": "19 - TBC",
+    "departure": 20.0
+  }
+]
