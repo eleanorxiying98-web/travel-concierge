@@ -295,7 +295,8 @@ if (arrival.title === "I have made my own arrangements") {
 } else {
 
     byId("arrivalTransport").textContent =
-    ${arrival.date} • ${arrival.time};
+        `${arrival.date} • ${arrival.time}`;
+
 }
 
 
