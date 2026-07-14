@@ -294,10 +294,10 @@ if (arrival.title === "I have made my own arrangements") {
 
 } else {
 
-    byId("arrivalTransport").innerHTML =
-    <div>${arrival.date}</div>
-    <div>${arrival.time}</div>
-`;
+    byId("arrivalTransport").innerHTML = `
+        <div>${arrival.date}</div>
+        <div>${arrival.time}</div>
+    `;
 
 }
 
@@ -315,10 +315,10 @@ if (departure.title === "I have made my own arrangements") {
 
 } else {
 
-    byId("departureTransport").innerHTML = 
-    <div>${departure.date}</div>
-    <div>${departure.time}</div>
-;
+    byId("departureTransport").innerHTML = `
+        <div>${departure.date}</div>
+        <div>${departure.time}</div>
+    `;
 
 }
    
