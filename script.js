@@ -102,27 +102,21 @@ function getArrivalDate(guest){
 
     const transport = clean(guest.arrival);
 
-    if(transport==="18"){
+    if(transport.includes("18")){
 
         return "18 December 2026";
 
     }
 
-    if(transport==="19"){
+    if(transport.includes("19")){
 
         return "19 December 2026";
 
     }
 
-    /*
-       Guest has hotel but arranged
-       their own transport.
-    */
-
     return "19 December 2026";
 
 }
-
 
 /* ---------------------------------------------------------
    Departure Date
@@ -162,8 +156,6 @@ function getArrivalTransport(guest){
     const hotel = getHotel(guest.hotel);
 
     return{
-
-        title:"Airport Shuttle",
 
         date:getArrivalDate(guest),
 
@@ -290,41 +282,46 @@ function showItinerary(guest){
     }
 
     /* ----------------------------------
-       Arrival Transport
-    ----------------------------------- */
+   Arrival Transport
+----------------------------------- */
 
-    const arrival = getArrivalTransport(guest);
+const arrival = getArrivalTransport(guest);
 
-    if(arrival.title === "I have made my own arrangements"){
+if (arrival.title === "I have made my own arrangements") {
 
-        byId("arrivalTransport").textContent =
-            arrival.title;
+    byId("arrivalTransport").textContent =
+        arrival.title;
 
-    }else{
+} else {
 
-        byId("arrivalTransport").innerHTML =
-         <div>${arrival.date}</div> • ${arrival.time}</div>;
+    byId("arrivalTransport").innerHTML = `
+        <div>${arrival.date}</div>
+        <div>${arrival.title} • ${arrival.time}</div>
+    `;
 
-    }
+}
 
-    /* ----------------------------------
-       Departure Transport
-    ----------------------------------- */
 
-    const departure = getDepartureTransport(guest);
+/* ----------------------------------
+   Departure Transport
+----------------------------------- */
 
-    if(departure.title === "I have made my own arrangements"){
+const departure = getDepartureTransport(guest);
 
-        byId("departureTransport").textContent =
-            departure.title;
+if (departure.title === "I have made my own arrangements") {
 
-    }else{
+    byId("departureTransport").textContent =
+        departure.title;
 
-        byId("departureTransport").innerHTML =
-            `${departure.date} • ${departure.time}`;
+} else {
 
-    }
+    byId("departureTransport").innerHTML = `
+        <div>${departure.date}</div>
+        <div>${departure.title} • ${departure.time}</div>
+    `;
 
+}
+   
     /* ----------------------------------
        Notes
     ----------------------------------- */
