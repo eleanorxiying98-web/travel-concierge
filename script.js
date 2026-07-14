@@ -303,10 +303,7 @@ function showItinerary(guest){
     }else{
 
         byId("arrivalTransport").innerHTML =
-`
-<div>${arrival.date}</div>
-<div>${arrival.title} • ${arrival.time}</div>
-`;
+         <div>${arrival.date}</div> • ${arrival.time}</div>;
 
     }
 
