@@ -294,8 +294,8 @@ if (arrival.title === "I have made my own arrangements") {
 
 } else {
 
-    byId("arrivalTransport").innerHTML = 
-        ${arrival.date} • ${arrival.time};
+    byId("arrivalTransport").textContent =
+    `${arrival.date} • ${arrival.time}`;
 }
 
 
@@ -312,8 +312,8 @@ if (departure.title === "I have made my own arrangements") {
 
 } else {
 
-    byId("departureTransport").innerHTML = 
-        ${departure.date} • ${departure.time};
+    byId("departureTransport").textContent =
+    `${departure.date} • ${departure.time}`;
 
 }
    
