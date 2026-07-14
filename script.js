@@ -64,7 +64,6 @@ function isSelfArranged(value){
 /* ---------------------------------------------------------
    Hotel Configuration
 --------------------------------------------------------- */
-
 function getHotel(hotel){
 
     hotel = clean(hotel).toLowerCase();
@@ -72,15 +71,10 @@ function getHotel(hotel){
     if(hotel.includes("moven")){
 
         return{
-
             name:"Mövenpick Resort Khao Yai",
-
             checkinTime:"3:00 PM",
-
             checkoutTime:"12:00 PM",
-
             arrivalShuttle:"11:30 AM"
-
         };
 
     }
@@ -88,15 +82,10 @@ function getHotel(hotel){
     if(hotel.includes("grand")){
 
         return{
-
             name:"Grand Wara Resort",
-
             checkinTime:"2:00 PM",
-
             checkoutTime:"12:00 PM",
-
             arrivalShuttle:"11:00 AM"
-
         };
 
     }
@@ -104,7 +93,6 @@ function getHotel(hotel){
     return null;
 
 }
-
 
 /* ---------------------------------------------------------
    Arrival Date
@@ -315,7 +303,10 @@ function showItinerary(guest){
     }else{
 
         byId("arrivalTransport").innerHTML =
-            `${arrival.date}<br>${arrival.title} • ${arrival.time}`;
+`
+<div>${arrival.date}</div>
+<div>${arrival.title} • ${arrival.time}</div>
+`;
 
     }
 
