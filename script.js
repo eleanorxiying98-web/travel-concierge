@@ -321,7 +321,7 @@ function showItinerary(guest){
     }else{
 
         byId("departureTransport").innerHTML =
-            `${departure.date}<br>${departure.title} • ${departure.time}`;
+            `${departure.date} • ${departure.time}`;
 
     }
 
