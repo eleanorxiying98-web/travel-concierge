@@ -1,14 +1,15 @@
 /* ==========================================================
    Eleanor & Evan
    Guest Concierge
+   Version 2
    Part 1
 ========================================================== */
 
 let guests = [];
 
-/* -----------------------------
+/* ---------------------------------------------------------
    Load Guest Data
------------------------------- */
+--------------------------------------------------------- */
 
 async function loadGuests() {
 
@@ -18,199 +19,340 @@ async function loadGuests() {
 
         guests = await response.json();
 
-    } catch (error) {
+    } catch (err) {
 
-        console.error(error);
+        console.error(err);
 
-        document.getElementById("errorMessage").textContent =
+        byId("errorMessage").textContent =
             "Unable to load guest information.";
 
     }
 
 }
 
-/* -----------------------------
-   Helper
------------------------------- */
+/* ---------------------------------------------------------
+   Helpers
+--------------------------------------------------------- */
 
-function byId(id) {
+function byId(id){
 
     return document.getElementById(id);
 
 }
 
-function clean(value) {
+function clean(value){
 
-    if (value === null || value === undefined) return "";
+    if(value===undefined || value===null){
+
+        return "";
+
+    }
 
     return String(value).trim();
 
 }
 
-/* -----------------------------
-   Hotel Details
------------------------------- */
+function isSelfArranged(value){
 
-function hotelDetails(hotel) {
+    value = clean(value).toUpperCase();
 
-    if (hotel === "Movenpick") {
+    return value === "" || value === "N/A";
 
-        return {
+}
 
-            hotelName: "Mövenpick Resort Khao Yai",
 
-            stayDates: "19–20 December 2026",
+/* ---------------------------------------------------------
+   Hotel Configuration
+--------------------------------------------------------- */
 
-            checkin: "19 December 2026 • From 3:00 PM",
+function getHotel(hotel){
 
-            checkout: "20 December 2026 • By 12:00 PM"
+    hotel = clean(hotel).toLowerCase();
 
-        };
+    if(hotel.includes("moven")){
 
-    }
+        return{
 
-    if (hotel === "Grand Wara") {
+            name:"Mövenpick Resort Khao Yai",
 
-        return {
+            checkinTime:"3:00 PM",
 
-            hotelName: "Grand Wara Resort",
+            checkoutTime:"12:00 PM",
 
-            stayDates: "19–20 December 2026",
-
-            checkin: "19 December 2026 • From 2:00 PM",
-
-            checkout: "20 December 2026 • By 12:00 PM"
+            arrivalShuttle:"11:30 AM"
 
         };
 
     }
 
-    return {
+    if(hotel.includes("grand")){
 
-        hotelName: "",
+        return{
 
-        stayDates: "",
+            name:"Grand Wara Resort",
 
-        checkin: "",
+            checkinTime:"2:00 PM",
 
-        checkout: ""
+            checkoutTime:"12:00 PM",
+
+            arrivalShuttle:"11:00 AM"
+
+        };
+
+    }
+
+    return null;
+
+}
+
+
+/* ---------------------------------------------------------
+   Arrival Date
+--------------------------------------------------------- */
+
+function getArrivalDate(guest){
+
+    const transport = clean(guest.arrival);
+
+    if(transport==="18"){
+
+        return "18 December 2026";
+
+    }
+
+    if(transport==="19"){
+
+        return "19 December 2026";
+
+    }
+
+    /*
+       Guest has hotel but arranged
+       their own transport.
+    */
+
+    return "19 December 2026";
+
+}
+
+
+/* ---------------------------------------------------------
+   Departure Date
+--------------------------------------------------------- */
+
+function getDepartureDate(guest){
+
+    const transport = clean(guest.departure);
+
+    if(transport==="20"){
+
+        return "20 December 2026";
+
+    }
+
+    return "";
+
+}
+
+
+/* ---------------------------------------------------------
+   Arrival Transport
+--------------------------------------------------------- */
+
+function getArrivalTransport(guest){
+
+    if(isSelfArranged(guest.arrival)){
+
+        return{
+
+            title:"I have made my own arrangements"
+
+        };
+
+    }
+
+    const hotel = getHotel(guest.hotel);
+
+    return{
+
+        title:"Airport Shuttle",
+
+        date:getArrivalDate(guest),
+
+        time:hotel.arrivalShuttle
 
     };
 
 }
 
-/* -----------------------------
-   Shuttle Text
------------------------------- */
 
-function transportText(value) {
+/* ---------------------------------------------------------
+   Departure Transport
+--------------------------------------------------------- */
 
-    value = clean(value);
+function getDepartureTransport(guest){
 
-    if (
-        value === "" ||
-        value.toUpperCase() === "N/A"
-    ) {
+    if(isSelfArranged(guest.departure)){
 
-        return "Self-arranged";
+        return{
 
-    }
+            title:"I have made my own arrangements"
 
-    switch (value) {
-
-        case "18":
-
-            return "18 December 2026\nAirport Shuttle";
-
-        case "19":
-
-            return "19 December 2026\nAirport Shuttle";
-
-        case "20":
-
-            return "20 December 2026\nAirport Shuttle";
-
-        default:
-
-            return value;
+        };
 
     }
+
+    return{
+
+        title:"Airport Shuttle",
+
+        date:getDepartureDate(guest),
+
+        time:"12:00 PM"
+
+    };
 
 }
 
-/* -----------------------------
-   Search Guest
------------------------------- */
 
-function findGuest(name) {
+/* ---------------------------------------------------------
+   Find Guest
+--------------------------------------------------------- */
+
+function findGuest(name){
 
     name = clean(name).toLowerCase();
 
-    return guests.find(g =>
-        clean(g.name).toLowerCase() === name
-    );
+    return guests.find(g=>{
+
+        return clean(g.name).toLowerCase()===name;
+
+    });
 
 }
 
 /* ==========================================================
+   Render Itinerary
    Part 2
 ========================================================== */
 
-/* -----------------------------
-   Populate Itinerary
------------------------------- */
+function showItinerary(guest){
 
-function showGuest(guest) {
+    const hotel = getHotel(guest.hotel);
 
-    const hotel = hotelDetails(guest.hotel);
+    /* ----------------------------------
+       Welcome
+    ----------------------------------- */
 
-    byId("welcomeName").innerHTML =
-        `Welcome,${guest.name}`;
+    byId("welcomeName").textContent =
+        `Welcome, ${guest.name}`;
 
-    byId("hotelName").textContent =
-        hotel.hotelName;
+    /* ----------------------------------
+       Intro
+    ----------------------------------- */
 
-    byId("stayDates").textContent =
-        hotel.stayDates;
+    const intro = document.querySelector(
+        "#itineraryScreen .intro"
+    );
 
-    byId("checkin").textContent =
-        hotel.checkin;
+    intro.textContent =
+        "Your personalised accommodation and transport arrangements for the wedding weekend are below.";
 
-    byId("checkout").textContent =
-        hotel.checkout;
+    /* ----------------------------------
+       Hotel
+    ----------------------------------- */
 
-    if (byId("roomType")) {
+    const hotelName = byId("hotelName");
+    const stayDates = byId("stayDates");
+    const checkin = byId("checkin");
+    const checkout = byId("checkout");
 
-        byId("roomType").textContent =
-            clean(guest.room);
+    if(!hotel){
+
+        hotelName.textContent =
+            "I have made my own arrangements";
+
+        hotelName.classList.add("self-arranged");
+
+        stayDates.textContent =
+            "Accommodation has been arranged independently of the wedding room allocation.";
+
+        checkin.parentElement.style.display = "none";
+        checkout.parentElement.style.display = "none";
+
+    }else{
+
+        hotelName.classList.remove("self-arranged");
+
+        hotelName.textContent =
+            hotel.name;
+
+        stayDates.textContent =
+            `${getArrivalDate(guest)} – 20 December 2026`;
+
+        checkin.parentElement.style.display = "flex";
+        checkout.parentElement.style.display = "flex";
+
+        checkin.textContent =
+            `${getArrivalDate(guest)} • ${hotel.checkinTime}`;
+
+        checkout.textContent =
+            `20 December 2026 • ${hotel.checkoutTime}`;
 
     }
 
-    byId("arrivalTransport").innerHTML =
-        transportText(guest.arrival).replace(/\n/g,"<br>");
+    /* ----------------------------------
+       Arrival Transport
+    ----------------------------------- */
 
-    byId("departureTransport").innerHTML =
-        transportText(guest.departure).replace(/\n/g,"<br>");
+    const arrival = getArrivalTransport(guest);
 
-}
+    if(arrival.title === "I have made my own arrangements"){
 
-/* -----------------------------
-   Transition
------------------------------- */
+        byId("arrivalTransport").textContent =
+            arrival.title;
 
-function openItinerary() {
+    }else{
 
-    const search = byId("searchScreen");
+        byId("arrivalTransport").innerHTML =
+            `${arrival.date}<br>${arrival.title} • ${arrival.time}`;
 
-    const itinerary = byId("itineraryScreen");
+    }
 
-    search.classList.remove("active");
+    /* ----------------------------------
+       Departure Transport
+    ----------------------------------- */
 
-    search.classList.add("hidden");
+    const departure = getDepartureTransport(guest);
 
-    itinerary.classList.remove("hidden");
+    if(departure.title === "I have made my own arrangements"){
 
-    itinerary.classList.add("active");
+        byId("departureTransport").textContent =
+            departure.title;
+
+    }else{
+
+        byId("departureTransport").innerHTML =
+            `${departure.date}<br>${departure.title} • ${departure.time}`;
+
+    }
+
+    /* ----------------------------------
+       Notes
+    ----------------------------------- */
+
+    byId("guestNotes").textContent =
+        "Exact pick-up locations and final travel information will be shared closer to the wedding weekend.";
+
+    /* ----------------------------------
+       Screen Transition
+    ----------------------------------- */
+
+    byId("searchScreen").classList.add("hidden");
+    byId("searchScreen").classList.remove("active");
+
+    byId("itineraryScreen").classList.remove("hidden");
+    byId("itineraryScreen").classList.add("active");
 
     window.scrollTo({
 
@@ -222,86 +364,152 @@ function openItinerary() {
 
 }
 
-function backToSearch() {
+/* ==========================================================
+   Eleanor & Evan
+   Guest Concierge
+   Version 2
+   Part 3
+========================================================== */
 
-    const search = byId("searchScreen");
+/* ---------------------------------------------------------
+   Search
+--------------------------------------------------------- */
 
-    const itinerary = byId("itineraryScreen");
-
-    itinerary.classList.remove("active");
-
-    itinerary.classList.add("hidden");
-
-    search.classList.remove("hidden");
-
-    search.classList.add("active");
-
-    byId("guestInput").focus();
-
-}
-
-/* -----------------------------
-   Lookup
------------------------------- */
-
-function lookupGuest() {
+function searchGuest(){
 
     byId("errorMessage").textContent = "";
 
-    const input = byId("guestInput");
+    const input = clean(byId("guestInput").value);
 
-    const guest = findGuest(input.value);
-
-    if (!guest) {
+    if(input===""){
 
         byId("errorMessage").textContent =
-            "We couldn't find that reservation name.";
+            "Please enter your reservation name.";
 
         return;
 
     }
 
-    showGuest(guest);
+    const guest = findGuest(input);
 
-    openItinerary();
+    if(!guest){
 
-}
+        byId("errorMessage").textContent =
+            "We couldn't find a reservation under that name. Please try again or contact us if you need assistance.";
 
-/* -----------------------------
-   Events
------------------------------- */
+        return;
 
-function bindEvents() {
+    }
 
-    byId("searchButton")
-        .addEventListener("click", lookupGuest);
-
-    byId("guestInput")
-        .addEventListener("keypress", function(e){
-
-            if(e.key==="Enter"){
-
-                e.preventDefault();
-
-                lookupGuest();
-
-            }
-
-        });
-
-    byId("backButton")
-        .addEventListener("click", backToSearch);
+    showItinerary(guest);
 
 }
 
-/* -----------------------------
+
+/* ---------------------------------------------------------
+   Return Home
+--------------------------------------------------------- */
+
+function returnHome(){
+
+    byId("itineraryScreen").classList.add("hidden");
+    byId("itineraryScreen").classList.remove("active");
+
+    byId("searchScreen").classList.remove("hidden");
+    byId("searchScreen").classList.add("active");
+
+    byId("guestInput").value = "";
+
+    byId("errorMessage").textContent = "";
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+/* ---------------------------------------------------------
    Initialise
------------------------------- */
+--------------------------------------------------------- */
 
-document.addEventListener("DOMContentLoaded", async () => {
+async function initialise(){
 
     await loadGuests();
 
-    bindEvents();
+    const input = byId("guestInput");
 
-});
+    const searchButton = byId("searchButton");
+
+    const backButton = byId("backButton");
+
+    /* Search Button */
+
+    searchButton.addEventListener(
+
+        "click",
+
+        function(){
+
+            searchGuest();
+
+        }
+
+    );
+
+    /* Press Enter */
+
+    input.addEventListener(
+
+        "keydown",
+
+        function(event){
+
+            if(event.key==="Enter"){
+
+                event.preventDefault();
+
+                searchGuest();
+
+            }
+
+        }
+
+    );
+
+    /* Back Button */
+
+    backButton.addEventListener(
+
+        "click",
+
+        function(){
+
+            returnHome();
+
+        }
+
+    );
+
+}
+
+
+/* ---------------------------------------------------------
+   Start App
+--------------------------------------------------------- */
+
+document.addEventListener(
+
+    "DOMContentLoaded",
+
+    function(){
+
+        initialise();
+
+    }
+
+);
