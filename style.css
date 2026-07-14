@@ -141,11 +141,9 @@ body{
 
     width:100px;
 
-    margin-bottom:35px;
-
     display:block;
 
-    margin:0 auto 34px;
+    margin:0 auto 24px;
 
 }
 
@@ -212,15 +210,15 @@ h1{
 
     font-weight:400;
 
-    font-size:50px;
-
-    font-style:italic;
+    font-size:48px;
 
     line-height:1.08;
 
     color:#4f443b;
 
-    margin-bottom:34px;
+    font-style:italic;
+
+    margin-bottom:30px;
 
 }
 
