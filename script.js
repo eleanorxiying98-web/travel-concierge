@@ -335,13 +335,7 @@ if (departure.title === "I have made my own arrangements") {
     byId("itineraryScreen").classList.remove("hidden");
     byId("itineraryScreen").classList.add("active");
 
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
+   window.scrollTo(0, 0);
 
 }
 
