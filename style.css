@@ -93,17 +93,19 @@ body{
 
 .paper{
 
-    width:68%;
+    width:55%;
 
-    max-width:920px;
+    max-width:900px;
 
-    background:#fffcf8;
+    background:rgba(255,252,248,.80);
+
+   backdrop-filter:blur(8px);
 
     border-radius:14px;
 
     box-shadow:
-        0 35px 90px rgba(0,0,0,.12);
-
+         0 20px 55px rgba(0,0,0,.08)
+       
     transition:
         opacity .6s ease,
         transform .6s ease;
@@ -137,7 +139,9 @@ body{
 
 .logo{
 
-    width:82px;
+    width:90px;
+
+    margin-bottom:42px;
 
     display:block;
 
@@ -160,11 +164,11 @@ body{
 
 .letterhead h3{
 
-    font-size:18px;
+    font-size:22px;
 
     font-weight:500;
 
-    letter-spacing:.38em;
+    letter-spacing:.42em;
 
     text-transform:uppercase;
 
@@ -208,7 +212,9 @@ h1{
 
     font-weight:400;
 
-    font-size:60px;
+    font-size:48px
+
+   font-style:italic;
 
     line-height:1.08;
 
@@ -401,7 +407,7 @@ button:hover{
 
     text-align:center;
 
-    font-size:54px;
+    font-size:48px;
 
     line-height:1.12;
 
@@ -732,7 +738,7 @@ button:hover{
 
     .paper{
 
-        width:86%;
+        width:72%;
 
     }
 
@@ -853,7 +859,7 @@ button:hover{
 
     .paper{
 
-        width:92%;
+        width:84%;
 
         border-radius:12px;
 
