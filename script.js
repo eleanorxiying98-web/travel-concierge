@@ -165,7 +165,7 @@ function showGuest(guest) {
     const hotel = hotelDetails(guest.hotel);
 
     byId("welcomeName").innerHTML =
-        `Welcome,<br>${guest.name}`;
+        `Welcome,${guest.name}`;
 
     byId("hotelName").textContent =
         hotel.hotelName;
