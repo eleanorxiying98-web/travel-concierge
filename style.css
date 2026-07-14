@@ -139,7 +139,7 @@ body{
 
 .logo{
 
-    width:90px;
+    width:100px;
 
     margin-bottom:35px;
 
@@ -212,9 +212,9 @@ h1{
 
     font-weight:400;
 
-    font-size:48px
+    font-size:50px;
 
-    font-style:italic
+    font-style:italic;
 
     line-height:1.08;
 
