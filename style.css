@@ -139,11 +139,11 @@ body{
 
 .logo{
 
-    width:120px;
+    width:140px;
 
     display:block;
 
-    margin:0 auto 10px;
+    margin:0 auto 5px;
 
 }
 
@@ -210,7 +210,7 @@ h1{
 
     font-weight:400;
 
-    font-size:44px;
+    font-size:40px;
 
     line-height:1.08;
 
@@ -235,7 +235,7 @@ h1{
 
     text-align:center;
 
-    font-size:22px;
+    font-size:20px;
 
     line-height:1.7;
 
