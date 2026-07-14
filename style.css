@@ -1,29 +1,9 @@
-/* ==========================================================
-   ELEANOR & EVAN
+/* =====================================================
+   Eleanor & Evan
    Guest Concierge
+   Luxury Editorial Theme
    Part 1
-========================================================== */
-
-/* ---------- Colour Palette ---------- */
-
-:root{
-
-    --paper:#FDFBF7;
-    --background:#F8F4ED;
-
-    --olive:#A7AE9E;
-    --taupe:#8E7C72;
-    --charcoal:#2E2A26;
-
-    --line:#E8E1D8;
-
-    --shadow:0 18px 60px rgba(0,0,0,.10);
-
-    --radius:12px;
-
-}
-
-/* ---------- Reset ---------- */
+===================================================== */
 
 *{
     margin:0;
@@ -39,17 +19,21 @@ html{
 
 body{
 
-    font-family:Inter,sans-serif;
+    background:#f6f2eb;
+    color:#54483f;
 
-    color:var(--charcoal);
+    font-family:"Cormorant Garamond",serif;
 
-    background:var(--background);
+    min-height:100vh;
 
     overflow-x:hidden;
 
 }
 
-/* ---------- Background ---------- */
+
+/* ==========================================
+   WATERCOLOUR BACKGROUND
+========================================== */
 
 .background{
 
@@ -57,19 +41,17 @@ body{
 
     inset:0;
 
-    background-image:url("images/background.jpg");
+    background-image:url("images/background.png");
 
     background-size:cover;
 
-    background-position:center;
+    background-position:center center;
 
     background-repeat:no-repeat;
 
     z-index:-2;
 
 }
-
-/* soften background */
 
 .background::after{
 
@@ -79,11 +61,14 @@ body{
 
     inset:0;
 
-    background:rgba(255,251,245,.10);
+    background:rgba(251,248,243,.18);
 
 }
 
-/* ---------- Page ---------- */
+
+/* ==========================================
+   PAGE
+========================================== */
 
 .page-wrapper{
 
@@ -95,29 +80,29 @@ body{
 
     justify-content:center;
 
-    align-items:center;
+    align-items:flex-start;
 
-    padding:50px 18px;
+    padding:70px 0;
 
 }
 
-/* ---------- Paper ---------- */
+
+/* ==========================================
+   PAPER
+========================================== */
 
 .paper{
 
-   width:min(66vw,760px);
-   max-width:760px;
-    background:var(--paper);
+    width:68%;
 
-    border-radius:var(--radius);
+    max-width:920px;
 
-    box-shadow:var(--shadow);
+    background:#fffcf8;
 
-    overflow:hidden;
+    border-radius:14px;
 
-    opacity:1;
-
-    transform:translateY(0);
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.12);
 
     transition:
         opacity .6s ease,
@@ -131,265 +116,352 @@ body{
 
 }
 
-.paper-inner{
-
-    padding:60px;
-
-}
-
-/* ---------- Logo ---------- */
-
-.logo{
-
-    width:120px;
+.paper.active{
 
     display:block;
 
-    margin:0 auto 28px;
+    animation:paperFade .7s ease;
 
 }
 
-/* ---------- Letterhead ---------- */
+.paper-inner{
+
+    padding:90px 95px;
+
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    width:82px;
+
+    display:block;
+
+    margin:0 auto 34px;
+
+}
+
+
+/* ==========================================
+   LETTERHEAD
+========================================== */
 
 .letterhead{
 
     text-align:center;
 
+    margin-bottom:34px;
+
 }
 
 .letterhead h3{
 
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:28px;
+    font-size:18px;
 
     font-weight:500;
 
-    letter-spacing:.28em;
+    letter-spacing:.38em;
 
     text-transform:uppercase;
+
+    color:#5f5147;
 
 }
 
 .letterhead p{
 
-    margin-top:6px;
+    margin-top:12px;
 
-    color:var(--taupe);
+    font-size:18px;
 
-    font-size:15px;
-
-    letter-spacing:.15em;
+    color:#84766c;
 
 }
 
-/* ---------- Divider ---------- */
+
+/* ==========================================
+   DIVIDER
+========================================== */
 
 hr{
 
-    margin:36px auto;
-
     border:none;
 
-    border-top:1px solid var(--line);
+    border-top:1px solid rgba(120,105,92,.15);
+
+    margin:40px auto 55px;
 
 }
 
-/* ---------- Heading ---------- */
+
+/* ==========================================
+   MAIN TITLE
+========================================== */
 
 h1{
 
     text-align:center;
 
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:54px;
-
     font-weight:400;
 
-    line-height:1.1;
+    font-size:60px;
 
-    margin-bottom:22px;
+    line-height:1.08;
+
+    color:#4f443b;
+
+    margin-bottom:34px;
 
 }
 
-/* ---------- Intro ---------- */
+
+/* ==========================================
+   INTRO
+========================================== */
 
 .intro{
 
-    max-width:560px;
+    max-width:640px;
 
     margin:0 auto;
 
     text-align:center;
 
-    line-height:1.85;
+    font-size:25px;
 
-    font-size:18px;
+    line-height:1.7;
 
-    color:#5b5754;
+    color:#6b5d52;
 
 }
 
 .intro.small{
 
-    margin-top:20px;
+    margin-top:28px;
 
-    font-size:16px;
+    font-size:21px;
 
 }
 
-/* ---------- Lookup ---------- */
+
+/* ==========================================
+   LOOKUP
+========================================== */
 
 .lookup{
 
-    margin-top:42px;
+    margin-top:60px;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:18px;
+    align-items:center;
+
+    gap:30px;
 
 }
 
-/* ==========================================================
-   Part 2
-========================================================== */
 
-/* ---------- Input ---------- */
+/* ==========================================
+   INPUT
+========================================== */
 
 .lookup input{
 
     width:100%;
 
-    border:1px solid var(--line);
+    max-width:500px;
 
-    background:#fffdf9;
+    background:transparent;
 
-    padding:18px 22px;
+    border:none;
 
-    border-radius:8px;
+    border-bottom:1px solid #a29182;
 
-    font-size:18px;
+    padding:16px 0;
 
-    color:var(--charcoal);
+    text-align:center;
 
-    font-family:Inter,sans-serif;
+    font-family:"Cormorant Garamond",serif;
 
-    transition:.25s;
+    font-size:30px;
+
+    color:#4e433b;
+
+    outline:none;
 
 }
 
 .lookup input::placeholder{
 
-    color:#9b938b;
+    color:#aa9d90;
 
 }
 
-.lookup input:focus{
 
-    outline:none;
-
-    border-color:var(--olive);
-
-    box-shadow:0 0 0 4px rgba(167,174,158,.15);
-
-}
-
-/* ---------- Buttons ---------- */
+/* ==========================================
+   BUTTON
+========================================== */
 
 button{
 
-    width:100%;
+    min-width:320px;
 
-    padding:18px;
+    height:64px;
 
-    border:none;
+    background:transparent;
+
+    border:1px solid #998876;
+
+    color:#6b5d52;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:22px;
+
+    letter-spacing:.08em;
 
     cursor:pointer;
 
-    border-radius:8px;
-
-    background:var(--charcoal);
-
-    color:white;
-
-    font-size:17px;
-
-    font-weight:500;
-
-    letter-spacing:.04em;
-
-    transition:.25s;
+    transition:.35s;
 
 }
 
 button:hover{
 
-    transform:translateY(-2px);
+    background:#998876;
 
-    background:#1d1b18;
-
-}
-
-button:active{
-
-    transform:translateY(0);
+    color:white;
 
 }
 
-/* ---------- Error ---------- */
+
+/* ==========================================
+   ERROR
+========================================== */
 
 .error{
 
-    margin-top:18px;
+    margin-top:26px;
 
     text-align:center;
 
-    color:#b03b3b;
+    font-size:21px;
 
-    min-height:22px;
-
-    font-size:15px;
+    color:#8c5d56;
 
 }
 
-/* ---------- Sections ---------- */
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes paperFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/* =====================================================
+   ITINERARY PAGE
+   Part 2
+===================================================== */
+
+/* ==========================================
+   ITINERARY INTRO
+========================================== */
+
+#itineraryScreen h1{
+
+    margin-bottom:24px;
+
+}
+
+#welcomeName{
+
+    text-align:center;
+
+    font-size:54px;
+
+    line-height:1.12;
+
+    font-weight:400;
+
+    color:#4b4038;
+
+}
+
+#itineraryScreen .intro{
+
+    margin-bottom:60px;
+
+}
+
+
+/* ==========================================
+   SECTIONS
+========================================== */
 
 .section{
 
-    margin-top:46px;
+    margin-top:56px;
 
 }
 
 .section:first-of-type{
 
-    margin-top:36px;
+    margin-top:0;
 
 }
 
 .section h2{
 
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:32px;
+    font-size:18px;
 
     font-weight:500;
 
-    margin-bottom:22px;
+    letter-spacing:.30em;
 
-    letter-spacing:.03em;
+    text-transform:uppercase;
+
+    color:#9a8a79;
+
+    margin-bottom:24px;
 
 }
 
-/* ---------- Hotel ---------- */
+
+/* ==========================================
+   HOTEL NAME
+========================================== */
 
 .hotel-name{
 
-    font-size:24px;
+    font-size:40px;
 
-    font-weight:500;
+    font-weight:400;
+
+    color:#4e433b;
 
     margin-bottom:8px;
 
@@ -397,15 +469,18 @@ button:active{
 
 .stay-dates{
 
-    color:var(--taupe);
+    font-size:22px;
 
-    font-size:17px;
+    color:#8d7f72;
 
-    margin-bottom:26px;
+    margin-bottom:32px;
 
 }
 
-/* ---------- Rows ---------- */
+
+/* ==========================================
+   INFORMATION ROWS
+========================================== */
 
 .row{
 
@@ -415,49 +490,54 @@ button:active{
 
     align-items:flex-start;
 
-    gap:24px;
+    gap:30px;
 
-    padding:16px 0;
+    padding:22px 0;
 
-    border-top:1px solid var(--line);
+    border-bottom:1px solid rgba(120,105,92,.12);
 
 }
 
 .row:last-child{
 
-    border-bottom:1px solid var(--line);
+    border-bottom:none;
 
 }
 
 .row span:first-child{
 
-    font-size:16px;
+    color:#8f8175;
 
-    color:var(--taupe);
+    font-size:22px;
+
+    letter-spacing:.05em;
 
 }
 
 .row span:last-child{
 
+    color:#4f433b;
+
+    font-size:24px;
+
     text-align:right;
 
-    font-size:17px;
-
-    font-weight:500;
-
-    line-height:1.5;
+    white-space:pre-line;
 
 }
 
-/* ---------- Notes ---------- */
+
+/* ==========================================
+   NOTES
+========================================== */
 
 #guestNotes{
 
-    line-height:1.9;
+    font-size:24px;
 
-    font-size:17px;
+    line-height:1.8;
 
-    color:#595553;
+    color:#65594f;
 
 }
 
@@ -465,55 +545,68 @@ button:active{
 
     margin-top:22px;
 
-    padding-top:22px;
-
-    border-top:1px solid var(--line);
-
-    color:#7d756d;
+    font-size:20px;
 
     line-height:1.8;
 
-    font-size:15px;
+    color:#8b7c70;
+
+    font-style:italic;
 
 }
 
-/* ---------- Back Button ---------- */
+
+/* ==========================================
+   RETURN BUTTON
+========================================== */
 
 #backButton{
 
-    margin-top:52px;
+    display:block;
+
+    margin:70px auto 0;
+
+    min-width:340px;
 
 }
 
-/* ---------- Welcome ---------- */
 
-#welcomeName{
+/* ==========================================
+   HOVER
+========================================== */
 
-    margin-bottom:18px;
+#backButton:hover{
 
-}
+    background:#998876;
 
-/* ==========================================================
-   Part 3
-   Responsive + Animation
-========================================================== */
-
-
-/* ---------- Fade ---------- */
-
-.paper{
-
-    animation:paperFade .75s ease;
+    color:#ffffff;
 
 }
 
-@keyframes paperFade{
+
+/* ==========================================
+   PAGE TRANSITION
+========================================== */
+
+#searchScreen{
+
+    animation:fadeIn .7s ease;
+
+}
+
+#itineraryScreen{
+
+    animation:fadeIn .7s ease;
+
+}
+
+@keyframes fadeIn{
 
     from{
 
         opacity:0;
 
-        transform:translateY(16px);
+        transform:translateY(18px);
 
     }
 
@@ -528,69 +621,259 @@ button:active{
 }
 
 
-/* ---------- Smooth transitions ---------- */
+/* ==========================================
+   SELF-ARRANGED STYLING
+========================================== */
 
-input,
-button,
-.paper{
+.hotel-name.self-arranged{
 
-    transition:all .3s ease;
+    font-size:34px;
+
+    color:#6b5d52;
+
+}
+
+.self-arranged-note{
+
+    margin-top:14px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#7b6f64;
 
 }
 
 
-/* ---------- Tablet ---------- */
+/* ==========================================
+   ELEGANT SPACING
+========================================== */
 
-@media (max-width:1024px){
+.section + .section{
+
+    margin-top:70px;
+
+}
+
+.section p{
+
+    max-width:680px;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+   Part 3
+===================================================== */
+
+
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
+
+@media (min-width:1600px){
 
     .paper{
 
-        width:min(80vw,760px);
+        max-width:980px;
+
+        width:62%;
 
     }
 
     .paper-inner{
 
-        padding:48px;
+        padding:100px 110px;
 
     }
 
     h1{
 
-        font-size:46px;
+        font-size:66px;
+
+    }
+
+    .intro{
+
+        font-size:27px;
 
     }
 
 }
 
 
-/* ---------- Mobile ---------- */
+/* ==========================================
+   DESKTOP
+========================================== */
 
-@media (max-width:768px){
+@media (max-width:1300px){
+
+    .paper{
+
+        width:74%;
+
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1024px){
 
     .page-wrapper{
 
-        padding:28px 14px;
+        padding:50px 0;
 
     }
 
     .paper{
 
-        width:88%;
-
-        border-radius:10px;
+        width:86%;
 
     }
 
     .paper-inner{
 
-        padding:34px 28px;
+        padding:70px 60px;
 
     }
 
     .logo{
 
-        width:105px;
+        width:76px;
+
+        margin-bottom:28px;
+
+    }
+
+    .letterhead h3{
+
+        font-size:17px;
+
+    }
+
+    .letterhead p{
+
+        font-size:17px;
+
+    }
+
+    hr{
+
+        margin:34px 0 44px;
+
+    }
+
+    h1{
+
+        font-size:50px;
+
+    }
+
+    #welcomeName{
+
+        font-size:46px;
+
+    }
+
+    .intro{
+
+        font-size:23px;
+
+    }
+
+    .intro.small{
+
+        font-size:20px;
+
+    }
+
+    .lookup{
+
+        margin-top:48px;
+
+    }
+
+    .lookup input{
+
+        font-size:28px;
+
+    }
+
+    button{
+
+        min-width:300px;
+
+        font-size:21px;
+
+    }
+
+    .hotel-name{
+
+        font-size:34px;
+
+    }
+
+    .stay-dates{
+
+        font-size:21px;
+
+    }
+
+    .row span:first-child{
+
+        font-size:21px;
+
+    }
+
+    .row span:last-child{
+
+        font-size:22px;
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .page-wrapper{
+
+        padding:24px 0;
+
+    }
+
+    .paper{
+
+        width:92%;
+
+        border-radius:12px;
+
+    }
+
+    .paper-inner{
+
+        padding:46px 28px;
+
+    }
+
+    .logo{
+
+        width:70px;
+
+        margin-bottom:22px;
+
+    }
+
+    .letterhead{
 
         margin-bottom:24px;
 
@@ -598,21 +881,23 @@ button,
 
     .letterhead h3{
 
-        font-size:24px;
+        font-size:16px;
 
-        letter-spacing:.20em;
+        letter-spacing:.28em;
 
     }
 
     .letterhead p{
 
-        font-size:14px;
+        margin-top:8px;
+
+        font-size:16px;
 
     }
 
     hr{
 
-        margin:26px 0;
+        margin:28px 0 36px;
 
     }
 
@@ -620,55 +905,69 @@ button,
 
         font-size:42px;
 
-        margin-bottom:18px;
+        margin-bottom:24px;
+
+    }
+
+    #welcomeName{
+
+        font-size:40px;
 
     }
 
     .intro{
 
-        font-size:17px;
+        font-size:23px;
 
-        line-height:1.8;
+        line-height:1.65;
 
     }
 
     .intro.small{
 
-        font-size:15px;
+        font-size:20px;
+
+        margin-top:18px;
 
     }
 
     .lookup{
 
-        margin-top:34px;
+        margin-top:38px;
+
+        gap:24px;
 
     }
 
     .lookup input{
 
-        padding:18px;
+        font-size:28px;
 
-        font-size:17px;
+        padding:14px 0;
 
     }
 
     button{
 
-        padding:18px;
+        width:100%;
 
-        font-size:17px;
+        min-width:unset;
+
+        height:60px;
+
+        font-size:21px;
 
     }
 
     .section{
 
-        margin-top:42px;
+        margin-top:48px;
 
     }
 
     .section h2{
 
-        font-size:30px;
+        font-size:16px;
 
         margin-bottom:18px;
 
@@ -676,13 +975,17 @@ button,
 
     .hotel-name{
 
-        font-size:22px;
+        font-size:32px;
+
+        line-height:1.2;
 
     }
 
     .stay-dates{
 
-        font-size:16px;
+        font-size:20px;
+
+        margin-bottom:22px;
 
     }
 
@@ -690,61 +993,213 @@ button,
 
         flex-direction:column;
 
-        gap:6px;
+        align-items:flex-start;
 
-        padding:16px 0;
+        gap:8px;
+
+        padding:18px 0;
+
+    }
+
+    .row span:first-child{
+
+        font-size:20px;
 
     }
 
     .row span:last-child{
 
+        font-size:22px;
+
         text-align:left;
 
-        font-size:17px;
+    }
+
+    #guestNotes{
+
+        font-size:22px;
+
+    }
+
+    .planner-note{
+
+        font-size:19px;
+
+    }
+
+    #backButton{
+
+        width:100%;
+
+        margin-top:54px;
 
     }
 
 }
 
 
-/* ---------- Small phones ---------- */
+/* ==========================================
+   SMALL MOBILE
+========================================== */
 
 @media (max-width:430px){
 
     .paper{
 
-        width:92%;
+        width:94%;
 
     }
 
     .paper-inner{
 
-        padding:26px 22px;
+        padding:40px 22px;
+
+    }
+
+    .logo{
+
+        width:64px;
 
     }
 
     h1{
 
+        font-size:38px;
+
+    }
+
+    #welcomeName{
+
         font-size:36px;
 
     }
 
-    .section h2{
+    .intro{
+
+        font-size:21px;
+
+    }
+
+    .intro.small{
+
+        font-size:18px;
+
+    }
+
+    .lookup input{
+
+        font-size:24px;
+
+    }
+
+    button{
+
+        height:56px;
+
+        font-size:20px;
+
+    }
+
+    .hotel-name{
 
         font-size:28px;
+
+    }
+
+    .stay-dates{
+
+        font-size:18px;
+
+    }
+
+    .row span:first-child{
+
+        font-size:18px;
+
+    }
+
+    .row span:last-child{
+
+        font-size:20px;
+
+    }
+
+    #guestNotes{
+
+        font-size:20px;
+
+    }
+
+    .planner-note{
+
+        font-size:18px;
 
     }
 
 }
 
 
-/* ---------- Desktop ---------- */
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
 
-@media (min-width:1400px){
+button,
+input{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+button:focus,
+input:focus{
+
+    outline:none;
+
+}
+
+
+/* ==========================================
+   IMAGE RENDERING
+========================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+/* ==========================================
+   PRINT
+========================================== */
+
+@media print{
+
+    body{
+
+        background:white;
+
+    }
+
+    .background{
+
+        display:none;
+
+    }
 
     .paper{
 
-        max-width:780px;
+        width:100%;
+
+        max-width:none;
+
+        box-shadow:none;
+
+        border-radius:0;
 
     }
 
