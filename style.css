@@ -97,9 +97,7 @@ body{
 
     box-shadow:0 16px 42px rgba(0,0,0,.07);
 
-    transition:
-        opacity .6s ease,
-        transform .6s ease;
+   transition:opacity .3s ease;
 
 }
 
@@ -575,43 +573,6 @@ button:hover{
     background:#998876;
 
     color:#ffffff;
-
-}
-
-
-/* ==========================================
-   PAGE TRANSITION
-========================================== */
-
-#searchScreen{
-
-    animation:fadeIn .7s ease;
-
-}
-
-#itineraryScreen{
-
-    animation:fadeIn .7s ease;
-
-}
-
-@keyframes fadeIn{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(18px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
 
 }
 
