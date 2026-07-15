@@ -87,7 +87,7 @@ body{
 
     width:min(760px,55vw);
 
-    margin:0 auto;
+    margin:-60px auto 0;
 
     background:rgba(255,252,248,.80);
 
