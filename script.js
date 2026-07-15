@@ -319,13 +319,6 @@ if (departure.title === "Arranged independently") {
 }
    
     /* ----------------------------------
-       Notes
-    ----------------------------------- */
-
-    byId("guestNotes").textContent =
-        "Exact pick-up locations and final travel information will be shared closer to the wedding weekend.";
-
-    /* ----------------------------------
        Screen Transition
     ----------------------------------- */
 
