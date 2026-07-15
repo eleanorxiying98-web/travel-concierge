@@ -89,7 +89,7 @@ body{
 
     margin:0 auto;
 
-    background:rgba(255,252,248,.80);
+    background:rgba(255,252,248,.72);
 
     backdrop-filter:blur(8px);
 
@@ -117,7 +117,7 @@ body{
 
 .paper-inner{
 
-    padding:90px 95px;
+    padding:60px 95px 80px;
 
 }
 
@@ -199,7 +199,7 @@ h1{
 
     font-weight:400;
 
-    font-size:40px;
+    font-size:32px;
 
     line-height:1.08;
 
@@ -207,7 +207,7 @@ h1{
 
     font-style:italic;
 
-    margin-bottom:30px;
+    margin-bottom:24px;
 
 }
 
@@ -394,13 +394,15 @@ button:hover{
 
     text-align:center;
 
-    font-size:44px;
-
-    line-height:1.12;
+    font-size:32px;
 
     font-weight:400;
 
-    color:#4b4038;
+    font-style:italic;
+
+    color:#4f443b;
+
+    margin-bottom:24px;
 
 }
 
@@ -519,36 +521,19 @@ button:hover{
 
 }
 
-
-/* ==========================================
-   NOTES
-========================================== */
-
-#guestNotes{
-
-    font-size:24px;
-
-    line-height:1.8;
-
-    color:#65594f;
-
-}
-
-.planner-note{
+.transport-note{
 
     margin-top:22px;
 
+    text-align:center;
+
     font-size:20px;
 
-    line-height:1.8;
+    line-height:1.7;
 
     color:#8b7c70;
 
-    font-style:italic;
-
 }
-
-
 /* ==========================================
    RETURN BUTTON
 ========================================== */
@@ -694,7 +679,7 @@ button:hover{
 
     .paper-inner{
 
-        padding:70px 60px;
+        padding:56px 60px;
 
     }
 
@@ -817,7 +802,7 @@ button:hover{
 
     .paper-inner{
 
-        padding:46px 28px;
+        padding:40px 28px;
 
     }
 
@@ -859,7 +844,7 @@ button:hover{
 
     h1{
 
-        font-size:42px;
+        font-size:32px;
 
         margin-bottom:24px;
 
@@ -867,7 +852,7 @@ button:hover{
 
     #welcomeName{
 
-        font-size:40px;
+        font-size:32px;
 
     }
 
@@ -907,7 +892,9 @@ button:hover{
 
         width:100%;
 
-        min-width:unset;
+        min-width:0;
+        
+        max-width:100%;
 
         height:60px;
 
@@ -1008,7 +995,7 @@ button:hover{
 
     .paper-inner{
 
-        padding:40px 22px;
+        padding:34px 22px;
 
     }
 
