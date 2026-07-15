@@ -147,7 +147,7 @@ function getArrivalTransport(guest){
 
         return{
 
-            title:"I have made my own arrangements"
+            title:"Arranged independently"
 
         };
 
@@ -176,7 +176,7 @@ function getDepartureTransport(guest){
 
         return{
 
-            title:"I have made my own arrangements"
+            title:"Arranged independently"
 
         };
 
@@ -250,7 +250,7 @@ function showItinerary(guest){
     if(!hotel){
 
         hotelName.textContent =
-            "I have made my own arrangements";
+            "Arranged independently";
 
         hotelName.classList.add("self-arranged");
 
@@ -287,7 +287,7 @@ function showItinerary(guest){
 
 const arrival = getArrivalTransport(guest);
 
-if (arrival.title === "I have made my own arrangements") {
+if (arrival.title === "Arranged independently") {
 
     byId("arrivalTransport").textContent =
         arrival.title;
@@ -306,7 +306,7 @@ if (arrival.title === "I have made my own arrangements") {
 
 const departure = getDepartureTransport(guest);
 
-if (departure.title === "I have made my own arrangements") {
+if (departure.title === "Arranged independently") {
 
     byId("departureTransport").textContent =
         departure.title;
