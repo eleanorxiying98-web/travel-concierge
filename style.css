@@ -218,15 +218,15 @@ h1{
 
 .intro{
 
-    max-width:640px;
+    max-width:620px;
 
     margin:0 auto;
 
     text-align:center;
 
-    font-size:22px;
+    font-size:20px;
 
-    line-height:1.7;
+    line-height:1.75;
 
     color:#6b5d52;
 
@@ -234,10 +234,14 @@ h1{
 
 .intro.small{
 
-    margin-top:28px;
+    margin-top:18px;
 
-    font-size:19px;
-    
+    font-size:20px;
+
+    line-height:1.75;
+
+    color:#6b5d52;
+
    font-style:italic;
 
 }
@@ -566,9 +570,11 @@ button:hover{
 
     display:block;
 
-    margin:70px auto 0;
+    width:100%;
 
-    min-width:340px;
+    max-width:340px;
+
+    margin:70px auto 0;
 
 }
 
@@ -868,7 +874,7 @@ button:hover{
 
     h1{
 
-        font-size:32px;
+        font-size:30px;
 
         margin-bottom:24px;
 
@@ -876,7 +882,7 @@ button:hover{
 
     #welcomeName{
 
-        font-size:32px;
+        font-size:30px;
 
     }
 
@@ -1045,13 +1051,13 @@ button:hover{
 
     h1{
 
-        font-size:38px;
+        font-size:27px;
 
     }
 
     #welcomeName{
 
-        font-size:36px;
+        font-size:27px;
 
     }
 
