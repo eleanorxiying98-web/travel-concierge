@@ -199,7 +199,7 @@ h1{
 
     font-weight:400;
 
-    font-size:28px;
+    font-size:31px;
 
     line-height:1.08;
 
@@ -288,7 +288,7 @@ h1{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:25px;
+    font-size:22px;
 
     color:#4e433b;
 
@@ -437,7 +437,7 @@ button:hover{
 
 .section h2{
 
-    font-size:17px;
+    font-size:20px;
 
     font-weight:500;
 
@@ -458,7 +458,7 @@ button:hover{
 
 .hotel-name{
 
-    font-size:22px;
+    font-size:24px;
 
     font-weight:400;
 
@@ -470,7 +470,7 @@ button:hover{
 
 .stay-dates{
 
-    font-size:12px;
+    font-size:17px;
 
     color:#8d7f72;
 
@@ -508,7 +508,7 @@ button:hover{
 
     color:#9a8a79;
 
-    font-size:16px;
+    font-size:18px;
 
     font-weight:500;
 
@@ -522,7 +522,7 @@ button:hover{
 
     color:#4f433b;
 
-    font-size:18px;
+    font-size:20px;
 
     font-weight:400;
 
@@ -902,7 +902,7 @@ button:hover{
     h1,
     #welcomeName{
 
-        font-size:24px;
+        font-size:26px;
 
         margin-bottom:18px;
 
@@ -918,7 +918,7 @@ button:hover{
     .intro.small,
     .transport-note{
 
-        font-size:17px;
+        font-size:19px;
 
         line-height:1.7;
 
@@ -962,7 +962,7 @@ button:hover{
 
     .section h2{
 
-        font-size:15px;
+        font-size:17px;
 
         margin-bottom:16px;
 
@@ -970,13 +970,13 @@ button:hover{
 
     .hotel-name{
 
-        font-size:19px;
+        font-size:21px;
 
     }
 
     .stay-dates{
 
-        font-size:11px;
+        font-size:19px;
 
         margin-bottom:18px;
 
@@ -996,13 +996,13 @@ button:hover{
 
     .row span:first-child{
 
-        font-size:14px;
+        font-size:16px;
 
     }
 
     .row span:last-child{
 
-        font-size:17px;
+        font-size:19px;
 
         text-align:left;
 
@@ -1053,7 +1053,7 @@ button:hover{
     h1,
     #welcomeName{
 
-        font-size:22px;
+        font-size:24px;
 
     }
 
@@ -1061,7 +1061,7 @@ button:hover{
     .intro.small,
     .transport-note{
 
-        font-size:16px;
+        font-size:18px;
 
     }
 
@@ -1081,25 +1081,25 @@ button:hover{
 
     .hotel-name{
 
-        font-size:18px;
+        font-size:20px;
 
     }
 
     .stay-dates{
 
-        font-size:11px;
+        font-size:15px;
 
     }
 
     .row span:first-child{
 
-        font-size:13px;
+        font-size:15px;
 
     }
 
     .row span:last-child{
 
-        font-size:16px;
+        font-size:18px;
 
     }
 
