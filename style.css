@@ -437,11 +437,11 @@ button:hover{
 
 .section h2{
 
-    font-size:18px;
+    font-size:17px;
 
     font-weight:500;
 
-    letter-spacing:.30em;
+    letter-spacing:.24em;
 
     text-transform:uppercase;
 
@@ -509,9 +509,9 @@ button:hover{
 
     color:#8f8175;
 
-    font-size:22px;
+    font-size:18px;
 
-    letter-spacing:.05em;
+    letter-spacing:.03em;
 
 }
 
@@ -519,31 +519,29 @@ button:hover{
 
     color:#4f433b;
 
-    font-size:24px;
+    font-size:20px;
 
     text-align:right;
 
-    white-space:pre-line;
-
 }
-
 /* ==========================================
    TRANSPORT NOTES
 ========================================== */
 
 .transport-note{
 
-    margin:0px auto 56px;
-
     max-width:620px;
+
+    margin:18px auto 56px;
 
     text-align:center;
 
-    font-size:18px;
+    font-size:20px;
 
-    line-height:1.7;
+    line-height:1.75;
 
-   color:#6b5d52;
+    color:#6b5d52;
+
 }
 
 .planner-note{
