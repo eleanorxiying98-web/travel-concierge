@@ -311,7 +311,7 @@ button{
 
     min-width:320px;
 
-    height:64px;
+    height:58px;
 
     background:transparent;
 
@@ -321,7 +321,7 @@ button{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:22px;
+    font-size:20px;
 
     letter-spacing:.08em;
 
@@ -702,7 +702,7 @@ button:hover{
 
     .page-wrapper{
 
-        padding:50px 0;
+        padding:32px 20px;
 
     }
 
@@ -714,21 +714,21 @@ button:hover{
 
     .paper-inner{
 
-        padding:56px 60px;
+        padding:50px 50px 60px;
 
     }
 
     .logo{
 
-        width:90px;
+        width:110px;
 
-        margin-bottom:28px;
+        margin:0 auto 4px;
 
     }
 
     .letterhead h3{
 
-        font-size:17px;
+        font-size:20px;
 
     }
 
@@ -736,84 +736,108 @@ button:hover{
 
         font-size:17px;
 
+        margin-top:12px;
+
     }
 
     hr{
 
-        margin:34px 0 44px;
+        margin:30px 0 42px;
 
     }
 
-    h1{
-
-        font-size:50px;
-
-    }
-
+    h1,
     #welcomeName{
 
-        font-size:46px;
+        font-size:26px;
+
+        margin-bottom:20px;
 
     }
 
-    .intro{
+    #itineraryScreen h1{
 
-        font-size:23px;
+        margin-top:-20px;
 
     }
 
-    .intro.small{
+    .intro,
+    .intro.small,
+    .transport-note{
 
-        font-size:20px;
+        font-size:18px;
+
+        line-height:1.7;
 
     }
 
     .lookup{
 
-        margin-top:48px;
+        margin-top:34px;
+
+        gap:24px;
 
     }
 
     .lookup input{
 
-        font-size:28px;
+        font-size:23px;
+
+        padding:10px 0;
 
     }
 
     button{
 
-        min-width:300px;
+        font-size:20px;
 
-        font-size:21px;
+        height:58px;
+
+    }
+
+    .section h2{
+
+        font-size:16px;
 
     }
 
     .hotel-name{
 
-        font-size:30px;
+        font-size:20px;
 
     }
 
     .stay-dates{
 
-        font-size:21px;
+        font-size:12px;
+
+    }
+
+    .row{
+
+        padding:12px 0;
 
     }
 
     .row span:first-child{
 
-        font-size:21px;
+        font-size:15px;
 
     }
 
     .row span:last-child{
 
-        font-size:22px;
+        font-size:17px;
+
+    }
+
+    .planner-note{
+
+        font-size:17px;
 
     }
 
 }
-
 
 /* ==========================================
    MOBILE
@@ -823,103 +847,96 @@ button:hover{
 
     .page-wrapper{
 
-        padding:24px 0;
+        padding:20px 16px;
 
     }
 
     .paper{
 
-        width:84%;
-
-        border-radius:12px;
+        width:90%;
 
     }
 
     .paper-inner{
 
-        padding:40px 28px;
+        padding:40px 24px 50px;
 
     }
 
     .logo{
 
-        width:75px;
+        width:90px;
 
-        margin-bottom:22px;
+        margin:0 auto 2px;
 
     }
 
     .letterhead{
 
-        margin-bottom:24px;
+        margin-bottom:18px;
 
     }
 
     .letterhead h3{
 
-        font-size:16px;
+        font-size:17px;
 
-        letter-spacing:.28em;
+        letter-spacing:.24em;
 
     }
 
     .letterhead p{
 
-        margin-top:8px;
+        font-size:15px;
 
-        font-size:16px;
+        margin-top:8px;
 
     }
 
     hr{
 
-        margin:28px 0 36px;
+        margin:22px 0 30px;
 
     }
 
-    h1{
-
-        font-size:30px;
-
-        margin-bottom:24px;
-
-    }
-
+    h1,
     #welcomeName{
 
-        font-size:30px;
+        font-size:24px;
+
+        margin-bottom:18px;
 
     }
 
-    .intro{
+    #itineraryScreen h1{
 
-        font-size:23px;
-
-        line-height:1.65;
+        margin-top:-10px;
 
     }
 
-    .intro.small{
+    .intro,
+    .intro.small,
+    .transport-note{
 
-        font-size:20px;
+        font-size:17px;
 
-        margin-top:18px;
+        line-height:1.7;
 
     }
 
     .lookup{
 
-        margin-top:38px;
+        margin-top:30px;
 
-        gap:24px;
+        gap:20px;
 
     }
 
     .lookup input{
 
-        font-size:28px;
+        font-size:21px;
 
-        padding:14px 0;
+        padding:10px 0;
 
     }
 
@@ -928,56 +945,40 @@ button:hover{
         width:100%;
 
         min-width:0;
-        
+
         max-width:100%;
 
-        height:60px;
+        height:54px;
 
-        font-size:21px;
+        font-size:18px;
 
     }
 
     .section{
 
-        margin-top:48px;
+        margin-top:42px;
 
     }
 
     .section h2{
 
-        font-size:16px;
+        font-size:15px;
 
-        margin-bottom:18px;
+        margin-bottom:16px;
 
     }
-   
-   .transfer-duration{
-
-    margin:-10px 0 24px;
-
-    text-align:center;
-
-    font-size:18px;
-
-    color:#8b7c70;
-
-    font-style:italic;
-
-}
 
     .hotel-name{
 
-        font-size:28px;
-
-        line-height:1.2;
+        font-size:19px;
 
     }
 
     .stay-dates{
 
-        font-size:20px;
+        font-size:11px;
 
-        margin-bottom:22px;
+        margin-bottom:18px;
 
     }
 
@@ -987,35 +988,29 @@ button:hover{
 
         align-items:flex-start;
 
-        gap:8px;
+        gap:6px;
 
-        padding:18px 0;
+        padding:12px 0;
 
     }
 
     .row span:first-child{
 
-        font-size:20px;
+        font-size:14px;
 
     }
 
     .row span:last-child{
 
-        font-size:22px;
+        font-size:17px;
 
         text-align:left;
 
     }
 
-    #guestNotes{
-
-        font-size:22px;
-
-    }
-
     .planner-note{
 
-        font-size:19px;
+        font-size:16px;
 
     }
 
@@ -1023,12 +1018,13 @@ button:hover{
 
         width:100%;
 
-        margin-top:54px;
+        max-width:none;
+
+        margin-top:42px;
 
     }
 
 }
-
 
 /* ==========================================
    SMALL MOBILE
@@ -1038,93 +1034,78 @@ button:hover{
 
     .paper{
 
-        width:84%;
+        width:92%;
 
     }
 
     .paper-inner{
 
-        padding:34px 22px;
+        padding:34px 20px 42px;
 
     }
 
     .logo{
 
-        width:75px;
+        width:80px;
 
     }
 
-    h1{
-
-        font-size:27px;
-
-    }
-
+    h1,
     #welcomeName{
 
-        font-size:27px;
+        font-size:22px;
 
     }
 
-    .intro{
+    .intro,
+    .intro.small,
+    .transport-note{
 
-        font-size:21px;
-
-    }
-
-    .intro.small{
-
-        font-size:18px;
+        font-size:16px;
 
     }
 
     .lookup input{
 
-        font-size:24px;
+        font-size:20px;
 
     }
 
     button{
 
-        height:56px;
+        font-size:17px;
 
-        font-size:20px;
+        height:50px;
 
     }
 
     .hotel-name{
 
-        font-size:24px;
+        font-size:18px;
 
     }
 
     .stay-dates{
 
-        font-size:18px;
+        font-size:11px;
 
     }
 
     .row span:first-child{
 
-        font-size:18px;
+        font-size:13px;
 
     }
 
     .row span:last-child{
 
-        font-size:20px;
-
-    }
-
-    #guestNotes{
-
-        font-size:20px;
+        font-size:16px;
 
     }
 
     .planner-note{
 
-        font-size:18px;
+        font-size:15px;
 
     }
 
