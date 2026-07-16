@@ -247,39 +247,40 @@ function showItinerary(guest){
     const checkin = byId("checkin");
     const checkout = byId("checkout");
 
-    if(!hotel){
+  if (!hotel) {
 
-        hotelName.textContent =
-            "Arranged independently";
+    hotelName.classList.add("self-arranged");
 
-        hotelName.classList.add("self-arranged");
+    hotelName.textContent =
+        "Arranged independently";
 
-        stayDates.textContent =
-            "Accommodation has been arranged independently of the wedding room allocation.";
+    stayDates.style.display = "none";
 
-        checkin.parentElement.style.display = "none";
-        checkout.parentElement.style.display = "none";
+    checkin.parentElement.style.display = "none";
+    checkout.parentElement.style.display = "none";
 
-    }else{
+} else {
 
-        hotelName.classList.remove("self-arranged");
+    hotelName.classList.remove("self-arranged");
 
-        hotelName.textContent =
-            hotel.name;
+    hotelName.textContent =
+        hotel.name;
 
-        stayDates.textContent =
-            `${getArrivalDate(guest)} – 20 December 2026`;
+    stayDates.style.display = "block";
 
-        checkin.parentElement.style.display = "flex";
-        checkout.parentElement.style.display = "flex";
+    stayDates.textContent =
+        `${getArrivalDate(guest)} – 20 December 2026`;
 
-        checkin.textContent =
-            `${getArrivalDate(guest)} • ${hotel.checkinTime}`;
+    checkin.parentElement.style.display = "flex";
+    checkout.parentElement.style.display = "flex";
 
-        checkout.textContent =
-            `20 December 2026 • ${hotel.checkoutTime}`;
+    checkin.textContent =
+        `${getArrivalDate(guest)} • ${hotel.checkinTime}`;
 
-    }
+    checkout.textContent =
+        `20 December 2026 • ${hotel.checkoutTime}`;
+
+}
 
     /* ----------------------------------
    Arrival Transport
