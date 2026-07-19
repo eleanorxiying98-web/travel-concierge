@@ -543,7 +543,7 @@ button:hover{
 
     text-align:center;
 
-    font-size:16px;
+    font-size:15px;
 
     line-height:1.7;
 
@@ -594,9 +594,29 @@ button:hover{
 
     line-height:1.8;
 
-    color:#6b5d52;
+    color:#8f8175;
 
 }
+
+/* ==========================================
+   TRAVEL ASSISTANCE
+========================================== */
+
+.travel-assistance{
+
+    font-size:21px;
+    line-height:1.9;
+    color:#65594f;
+
+}
+
+.travel-assistance a{
+
+    color:#65594f;
+    text-decoration:underline;
+
+}
+
 /* ==========================================
    LINKS
 ========================================== */
