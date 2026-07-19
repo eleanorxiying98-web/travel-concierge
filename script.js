@@ -194,7 +194,6 @@ function getDepartureTransport(guest){
 
 }
 
-
 /* ---------------------------------------------------------
    Find Guest
 --------------------------------------------------------- */
@@ -374,6 +373,47 @@ function searchGuest(){
 
 }
 
+
+/* ----------------------------------
+   Transport Note
+----------------------------------- */
+
+const usingWeddingTransport =
+    !isSelfArranged(guest.arrival) ||
+    !isSelfArranged(guest.departure);
+
+byId("transportNote").style.display =
+    usingWeddingTransport ? "block" : "none";
+
+/* ----------------------------------
+   Extend Your Stay
+----------------------------------- */
+
+const extendStay = byId("extendStayText");
+
+if (hotel && hotel.name.includes("Grand Wara")) {
+
+    extendStay.innerHTML = `
+        If you'd like to extend your stay or book additional rooms,
+        please contact <strong>Grand Wara Resort</strong> directly via
+        <strong>Line (Airsununta)</strong> or
+        <a href="tel:+66816963790">+66 81 696 3790</a>.
+        Please note that WhatsApp is unavailable.
+    `;
+
+} else {
+
+    extendStay.innerHTML = `
+        If you'd like to extend your stay or explore other room categories,
+        please contact <strong>Mövenpick Resort Khao Yai</strong> at
+        <a href="mailto:Resort.KhaoYai.Reservation@movenpick.com">
+        Resort.KhaoYai.Reservation@movenpick.com</a>
+        and mention
+        <strong>"Eleanor & Evan's Wedding – 19 December 2026"</strong>
+        to enjoy the preferential wedding rates.
+    `;
+
+}
 
 /* ---------------------------------------------------------
    Return Home
