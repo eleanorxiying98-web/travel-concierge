@@ -683,27 +683,47 @@ button:hover{
 
 }
 
-.contact-label{
+/* ==========================================
+   CONTACT INFORMATION
+========================================== */
 
-    margin-top:24px;
+.contact-line{
 
-    margin-bottom:6px;
+    margin-top:14px;
 
-    font-size:15px;
+    font-size:18px;
 
-    letter-spacing:.10em;
+    line-height:1.8;
 
-    text-transform:uppercase;
-
-    color:#9a8a79;
+    color:#5f5349;
 
 }
 
-.contact-value{
+.contact-line strong{
 
-    font-size:19px;
+    font-weight:600;
+
+    color:#7f6d5d;
+
+}
+
+.contact-line a{
+
+    color:inherit;
+
+    text-decoration:underline;
+
+}
+
+.helper-note{
+
+    margin-top:16px;
+
+    font-size:17px;
 
     line-height:1.8;
+
+    color:#7d7064;
 
 }
 /* ==========================================
