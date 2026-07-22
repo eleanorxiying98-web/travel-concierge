@@ -337,40 +337,29 @@ const extendStay = byId("extendStayText");
 
 if (hotel && hotel.name.includes("Grand Wara")) {
 
-    extendStay.innerHTML = `
-    To extend your stay or book additional nights, please contact
-    <strong>Khun Air</strong>, the English-speaking owner of Grand Wara Resort.
+   extendStay.innerHTML = `
+    If you'd like to extend your stay at <strong>Grand Wara Resort</strong>,
+    please contact <strong>Khun Air</strong>, the English-speaking owner, via Line.
 
-    <div class="contact-label">Phone</div>
-
-    <div class="contact-value">
-        <a href="tel:+66816963790">+66 81 696 3790</a>
-    </div>
-
-    <div class="contact-label">Line ID</div>
-
-    <div class="contact-value">
-        Airsununta
-    </div>
-
-    <p class="helper-note">
-        WhatsApp is unavailable.
+    <p class="contact-line">
+        <strong>Line:</strong>
+        Airsununta / +66 81 696 3790
     </p>
 `;
-
+   
 } else {
 
     extendStay.innerHTML = `
-    To extend your stay or make a reservation at Mövenpick Resort Khao Yai,
+    If you'd like to make a reservation or extend your stay at
+    <strong>Mövenpick Resort Khao Yai</strong>,
     please contact the reservations team directly.
 
-    <div class="contact-label">Reservations</div>
-
-    <div class="contact-value">
+    <p class="contact-line">
+        <strong>Reservations:</strong>
         <a href="mailto:Resort.KhaoYai.Reservation@movenpick.com">
             Resort.KhaoYai.Reservation@movenpick.com
         </a>
-    </div>
+    </p>
 
     <p class="helper-note">
         Please mention
@@ -378,7 +367,6 @@ if (hotel && hotel.name.includes("Grand Wara")) {
         to receive the preferential wedding rates.
     </p>
 `;
-
 }
    
     /* ----------------------------------
