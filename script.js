@@ -525,7 +525,22 @@ async function initialise(){
     );
 
 }
+const websiteButton = byId("websiteButton");
 
+websiteButton.addEventListener(
+
+    "click",
+
+    function(){
+
+        window.open(
+            "https://mariamlol.my.canva.site/elevan-invite",
+            "_blank"
+        );
+
+    }
+
+);
 
 /* ---------------------------------------------------------
    Start App
