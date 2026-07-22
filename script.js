@@ -338,11 +338,11 @@ const extendStay = byId("extendStayText");
 if (hotel && hotel.name.includes("Grand Wara")) {
 
    extendStay.innerHTML = `
-    If you'd like to extend your stay at <strong>Grand Wara Resort</strong>,
-    please contact <strong>Khun Air</strong>, the English-speaking owner, via Line.
+    If you'd like to extend your stay at Grand Wara Resort,
+    please contact Khun Air, the English-speaking owner, via Line.
 
     <p class="contact-line">
-        <strong>Line:</strong>
+        <strong>Line ID:</strong>
         Airsununta / +66 81 696 3790
     </p>
 `;
