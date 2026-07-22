@@ -482,6 +482,19 @@ button:hover{
     margin:42px 0;
 
 }
+
+.subsection-text{
+
+    margin:14px 0 22px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#5f5147;
+
+}
+
 /* ==========================================
    HOTEL NAME
 ========================================== */
