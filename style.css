@@ -451,6 +451,28 @@ button:hover{
 
 }
 
+/* ==========================================
+   SUBSECTIONS
+========================================== */
+
+.subsection{
+
+    margin-top:34px;
+
+}
+
+.subsection h3{
+
+    font-size:18px;
+
+    font-weight:500;
+
+    color:#6b5d52;
+
+    margin-bottom:14px;
+
+}
+
 
 /* ==========================================
    HOTEL NAME
@@ -590,11 +612,19 @@ button:hover{
 
 #extendStayText{
 
-    font-size:18px;
+    font-size:20px;
 
-    line-height:1.8;
+    line-height:1.9;
 
-    color:#8f8175;
+    color:#65594f;
+
+}
+
+#extendStayText a{
+
+    color:#65594f;
+
+    text-decoration:underline;
 
 }
 
@@ -604,8 +634,12 @@ button:hover{
 
 .travel-assistance{
 
-    font-size:21px;
+    margin-top:12px;
+
+    font-size:20px;
+
     line-height:1.9;
+
     color:#65594f;
 
 }
@@ -613,6 +647,7 @@ button:hover{
 .travel-assistance a{
 
     color:#65594f;
+
     text-decoration:underline;
 
 }
