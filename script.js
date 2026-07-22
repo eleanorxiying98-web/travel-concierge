@@ -357,11 +357,10 @@ reservations team directly at
 Resort.KhaoYai.Reservation@movenpick.com
 </a>
 and mention
-and mention
 <span class="wedding-reference">
     "Eleanor &amp; Evan's Wedding – 19 December 2026"
 </span>
-to receive the preferential wedding rates.to receive the preferential wedding rates.
+to receive the preferential wedding rates.
 `;
 }
    
