@@ -318,7 +318,7 @@ if (departure.title === "Arranged independently") {
 
 }
 
-   /* ----------------------------------
+/* ----------------------------------
    Transport Note
 ----------------------------------- */
 
@@ -338,21 +338,41 @@ const extendStay = byId("extendStayText");
 if (hotel && hotel.name.includes("Grand Wara")) {
 
     extendStay.innerHTML = `
-        If you'd like to extend your stay or book additional rooms,
-        please contact <strong>Grand Wara Resort</strong> directly via
-        <strong>Line (Airsununta)</strong> or
-        <a href="tel:+66816963790">+66 81 696 3790</a>.
-        Please note that WhatsApp is unavailable.
+        If you'd like to extend your stay or book additional rooms, please contact
+        <strong>Khun Air</strong>, the English-speaking owner of Grand Wara Resort.
+
+        <br><br>
+
+        Line ID:
+        <strong>Airsununta</strong>
+
+        <br>
+
+        Phone:
+        <a href="tel:+66816963790">
+            +66 81 696 3790
+        </a>
+
+        <br>
+
+        WhatsApp unavailable.
     `;
 
 } else {
 
     extendStay.innerHTML = `
         If you'd like to extend your stay or explore other room categories,
-        please contact <strong>Mövenpick Resort Khao Yai</strong> at
+        please contact the Mövenpick Reservations team directly.
+
+        <br><br>
+
         <a href="mailto:Resort.KhaoYai.Reservation@movenpick.com">
-        Resort.KhaoYai.Reservation@movenpick.com</a>
-        and mention
+            Resort.KhaoYai.Reservation@movenpick.com
+        </a>
+
+        <br><br>
+
+        Please mention
         <strong>"Eleanor & Evan's Wedding – 19 December 2026"</strong>
         to enjoy the preferential wedding rates.
     `;
