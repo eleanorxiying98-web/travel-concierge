@@ -473,7 +473,15 @@ button:hover{
 
 }
 
+.sub-divider{
 
+    border:none;
+
+    border-top:1px solid rgba(120,105,92,.10);
+
+    margin:42px 0;
+
+}
 /* ==========================================
    HOTEL NAME
 ========================================== */
@@ -617,6 +625,8 @@ button:hover{
     line-height:1.9;
 
     color:#65594f;
+    
+    max-width:620px;
 
 }
 
@@ -672,6 +682,30 @@ button:hover{
     border-bottom-color:#4f433b;
 
 }
+
+.contact-label{
+
+    margin-top:24px;
+
+    margin-bottom:6px;
+
+    font-size:15px;
+
+    letter-spacing:.10em;
+
+    text-transform:uppercase;
+
+    color:#9a8a79;
+
+}
+
+.contact-value{
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
 /* ==========================================
    RETURN BUTTON
 ========================================== */
@@ -687,7 +721,20 @@ button:hover{
     margin:70px auto 0;
 
 }
+/* ==========================================
+   WEBSITE BUTTON
+========================================== */
+#websiteButton{
 
+    display:block;
+
+    width:100%;
+
+    max-width:340px;
+
+    margin:18px auto 0;
+
+}
 
 /* ==========================================
    HOVER
