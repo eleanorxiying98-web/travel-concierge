@@ -117,7 +117,7 @@ body{
 
 .paper-inner{
 
-    padding:60px 95px 80px;
+    padding:60px 95px 100px;
 
 }
 
@@ -719,7 +719,7 @@ button:hover{
 
     margin:10px 0;
 
-    font-size:20px;
+    font-size:18px;
 
     line-height:1.8;
 
@@ -765,7 +765,7 @@ button:hover{
 
     max-width:340px;
 
-    margin:70px auto 0;
+    margin:40px auto 0;
 
 }
 /* ==========================================
@@ -780,7 +780,7 @@ button:hover{
     max-width:340px;
 
     margin:18px auto 0;
-    margin-bottom:20px;
+    margin-bottom:40px;
 
 }
 
