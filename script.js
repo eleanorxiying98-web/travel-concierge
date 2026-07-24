@@ -349,21 +349,29 @@ if (hotel && hotel.name.includes("Grand Wara")) {
    
 } else {
 
-    extendStay.innerHTML = `
+extendStay.innerHTML = `
 If you'd like to make a reservation or extend your stay at
-Mövenpick Resort Khao Yai, please contact the
-reservations team directly at
-<a href="mailto:Resort.KhaoYai.Reservation@movenpick.com">
-Resort.KhaoYai.Reservation@movenpick.com
-</a>
-and mention
-<span class="wedding-reference">
-    "Eleanor &amp; Evan's Wedding – 19 December 2026"
-</span>
-to receive the preferential wedding rates.
+<strong>Mövenpick Resort Khao Yai</strong>, please contact the
+reservations team directly to receive the preferential wedding rates.
+
+<div class="contact-block">
+
+    <p class="contact-line">
+        <strong>Email:&nbsp;</strong>
+        <a href="mailto:Resort.KhaoYai.Reservation@movenpick.com">
+            Resort.KhaoYai.Reservation@movenpick.com
+        </a>
+    </p>
+
+    <p class="contact-line">
+        <strong>Mention:&nbsp;</strong>
+        <span class="wedding-reference">
+            "Eleanor &amp; Evan's Wedding – 19 December 2026"
+        </span>
+    </p>
+
+</div>
 `;
-}
-   
     /* ----------------------------------
        Screen Transition
     ----------------------------------- */
