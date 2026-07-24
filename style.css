@@ -407,7 +407,8 @@ button:hover{
     font-style:italic;
 
     color:#4f443b;
-
+   
+    margin-top:10px;
     margin-bottom:24px;
 
 }
@@ -580,13 +581,13 @@ button:hover{
 
 .transport-note{
 
-    max-width:540px;
+    max-width:580px;
 
     margin:18px auto 0;
 
     text-align:center;
 
-    font-size:17px;
+    font-size:18px;
 
     line-height:1.7;
 
@@ -633,7 +634,7 @@ button:hover{
 
 #extendStayText{
 
-    font-size:18px;
+    font-size:19px;
 
     line-height:1.8;
 
@@ -659,7 +660,7 @@ button:hover{
 
     margin-top:12px;
 
-    font-size:18px;
+    font-size:19px;
 
     line-height:1.8;
 
