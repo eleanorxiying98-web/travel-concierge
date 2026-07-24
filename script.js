@@ -371,7 +371,7 @@ reservations team directly to receive the preferential wedding rates.
     </p>
 
 </div>
-`;
+`;}
     /* ----------------------------------
        Screen Transition
     ----------------------------------- */
