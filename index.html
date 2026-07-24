@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Eleanor & Evan | Guest Concierge</title>
+    <title>Eleanor &amp; Evan | Guest Concierge</title>
 
     <meta name="theme-color" content="#f8f4ed">
 
@@ -14,275 +16,287 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div class="background"></div>
+    <div class="background"></div>
 
-<div class="page-wrapper">
+    <div class="page-wrapper">
 
-    <!-- ===========================
-         SEARCH SCREEN
-    ============================ -->
+        <!-- =====================================================
+             SEARCH SCREEN
+        ====================================================== -->
 
-    <section id="searchScreen" class="paper active">
+        <section id="searchScreen" class="paper active">
 
-        <div class="paper-inner">
+            <div class="paper-inner">
 
-            <img
-                src="images/logo.png"
-                class="logo"
-                alt="Eleanor & Evan Logo">
+                <img
+                    src="images/logo.png"
+                    class="logo"
+                    alt="Eleanor & Evan Logo">
 
-            <div class="letterhead">
+                <div class="letterhead">
 
-                <h3>ELEANOR & EVAN</h3>
+                    <h3>ELEANOR &amp; EVAN</h3>
 
-                <p>19 December 2026</p>
+                    <p>19 December 2026</p>
+
+                </div>
+
+                <hr>
+
+                <h1>Your Travel Itinerary</h1>
+
+                <p class="intro">
+
+                    We've thoughtfully prepared your accommodation and transport
+                    arrangements to help make your journey to Khao Yai as seamless
+                    as possible.
+
+                </p>
+
+                <p class="intro small">
+
+                    Please enter your reservation name below to retrieve your
+                    personalised travel itinerary.
+
+                </p>
+
+                <form class="lookup" id="lookupForm">
+
+                    <input
+                        id="guestInput"
+                        type="text"
+                        placeholder="Reservation Name"
+                        autocomplete="off">
+
+                    <button
+                        id="searchButton"
+                        type="button">
+
+                        Retrieve My Itinerary
+
+                    </button>
+
+                </form>
+
+                <p id="errorMessage" class="error"></p>
 
             </div>
 
-            <hr>
-
-            <h1>Your Travel Itinerary</h1>
-
-            <p class="intro">
-
-                We've thoughtfully prepared your accommodation and transport
-                arrangements to help make your journey to Khao Yai as seamless
-                as possible.
-
-            </p>
-
-            <p class="intro small">
-
-                Please enter your reservation name below to retrieve your
-                personalised travel itinerary.
-
-            </p>
-
-<form class="lookup" id="lookupForm">
-
-    <input
-        id="guestInput"
-        type="text"
-        placeholder="Reservation Name"
-        autocomplete="off">
-
-    <button
-        id="searchButton"
-        type="button">
-
-        Retrieve My Itinerary
-
-    </button>
-
-</form>
-
-<p id="errorMessage" class="error"></p>
-
-</div>
-
-</section>
+        </section>
 
 
+        <!-- =====================================================
+             ITINERARY SCREEN
+        ====================================================== -->
 
-    <!-- ===========================
-         ITINERARY SCREEN
-    ============================ -->
+        <section id="itineraryScreen" class="paper hidden">
 
-    <section id="itineraryScreen" class="paper hidden">
+            <div class="paper-inner">
 
-        <div class="paper-inner">
+                <img
+                    src="images/logo.png"
+                    class="logo"
+                    alt="Eleanor & Evan Logo">
 
-            <img
-                src="images/logo.png"
-                class="logo"
-                alt="Logo">
+                <div class="letterhead">
 
-            <div class="letterhead">
+                    <h3>ELEANOR &amp; EVAN</h3>
 
-                <h3>ELEANOR & EVAN</h3>
+                    <p>19 December 2026</p>
 
-                <p>19 December 2026</p>
+                </div>
+
+                <hr>
+
+                <h1 id="welcomeName"></h1>
+
+                <p class="intro">
+
+                    Your personalised accommodation and transport arrangements
+                    for the wedding weekend are below.
+
+                </p>
+
+
+                <!-- ==========================================
+                     YOUR STAY
+                =========================================== -->
+
+                <div class="section">
+
+                    <h2>Your Stay</h2>
+
+                    <div
+                        class="hotel-name"
+                        id="hotelName">
+                    </div>
+
+                    <div
+                        class="stay-dates"
+                        id="stayDates">
+                    </div>
+
+                    <div class="row">
+
+                        <span>Check-in</span>
+
+                        <span id="checkin"></span>
+
+                    </div>
+
+                    <div class="row">
+
+                        <span>Check-out</span>
+
+                        <span id="checkout"></span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==========================================
+                     AIRPORT TRANSFERS
+                =========================================== -->
+
+                <div class="section">
+
+                    <h2>Airport Transfers</h2>
+
+                    <div class="row">
+
+                        <span>From BKK Airport</span>
+
+                        <span id="arrivalTransport"></span>
+
+                    </div>
+
+                    <div class="row">
+
+                        <span>From Khao Yai</span>
+
+                        <span id="departureTransport"></span>
+
+                    </div>
+
+                    <p
+                        id="transportNote"
+                        class="transport-note">
+
+                        Please arrive at your designated pick-up point at least
+                        <strong>15 minutes before your scheduled departure.</strong>
+                        Final pick-up locations will be shared closer to the wedding weekend.
+
+                    </p>
+
+                </div>
+
+
+                <!-- ==========================================
+                     BEFORE YOU TRAVEL
+                =========================================== -->
+
+                <div class="section">
+
+                    <h2>Before You Travel</h2>
+
+                    <div class="subsection">
+
+                        <h3>Accommodation</h3>
+
+                        <p id="extendStayText"></p>
+
+                    </div>
+
+                    <div class="subsection">
+
+                        <h3>Travel Assistance</h3>
+
+                        <p class="subsection-text">
+
+                            If you require airport transfers or local transport
+                            during your stay, Safetrip can assist with both
+                            advance and last-minute bookings, subject to availability.
+
+                        </p>
+
+                        <div class="contact-block">
+
+                            <p class="contact-line">
+
+                                <strong>Website:&nbsp;</strong>
+
+                                <a
+                                    href="https://www.safetrip.co.th"
+                                    target="_blank">
+
+                                    safetrip.co.th
+
+                                </a>
+
+                            </p>
+
+                            <p class="contact-line">
+
+                                <strong>WhatsApp:&nbsp;</strong>
+
+                                <a
+                                    href="https://wa.me/66809727188"
+                                    target="_blank">
+
+                                    Khun Lek (+66 80 972 7188)
+
+                                </a>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <p class="planner-note">
+
+                    Should your plans change, please let us know by the
+                    <strong>end of September</strong>
+                    so we can update your accommodation and transport arrangements
+                    where possible.
+
+                </p>
+
+
+                <div class="button-group">
+
+                    <button id="backButton">
+
+                        Return to Guest Concierge
+
+                    </button>
+
+                    <button id="websiteButton">
+
+                        Back to Wedding Website
+
+                    </button>
+
+                </div>
 
             </div>
 
-            <hr>
-
-<h1 id="welcomeName"></h1>
-
-        <p class="intro">
-
-        Your personalised accommodation and transport arrangements for the wedding weekend are below.
-
-        </p>
-
-
-            <!-- STAY -->
-
-            <div class="section">
-
-                <h2>Your Stay</h2>
-
-                <div class="hotel-name"
-                     id="hotelName">
-
-                </div>
-
-                <div class="stay-dates"
-                     id="stayDates">
-
-                </div>
-
-                <div class="row">
-
-                    <span>
-
-                        Check-in
-
-                    </span>
-
-                    <span id="checkin">
-
-                    </span>
-
-                </div>
-
-                <div class="row">
-
-                    <span>
-
-                        Check-out
-
-                    </span>
-
-                    <span id="checkout">
-
-                    </span>
-
-                </div>
-
-            </div>
-
-<!-- AIRPORT TRANSFERS -->
-
-<div class="section">
-
-    <h2>Airport Transfers</h2>
-
-    <div class="row">
-
-        <span>From BKK Airport</span>
-
-        <span id="arrivalTransport"></span>
+        </section>
 
     </div>
 
-    <div class="row">
-
-        <span>From Khao Yai</span>
-
-        <span id="departureTransport"></span>
-
-    </div>
-
-    <p id="transportNote" class="transport-note">
-
-        Please arrive at your designated pick-up point at least
-        <strong>15 minutes before your scheduled departure.</strong>
-        Final pick-up locations will be shared closer to the wedding weekend.
-
-    </p>
-
-</div>
-
-
-<!-- BEFORE YOU TRAVEL -->
-
-<div class="section">
-
-    <h2>Before You Travel</h2>
-
-    <!-- ACCOMMODATION -->
-
-    <div class="subsection">
-
-        <h3>Accommodation</h3>
-
-        <p id="extendStayText"></p>
-
-    </div>
-
-    <div class="subsection">
-
-    <h3>Travel Assistance</h3>
-
-    <p class="subsection-text">
-
-        If you require airport transfers or local transport during your stay,
-        Safetrip can assist with both advance and last-minute bookings,
-        subject to availability.
-
-    </p>
-
-    <div class="contact-block">
-
-    <p class="contact-line">
-        <strong>Website:&nbsp;</strong>
-        <a href="https://www.safetrip.co.th" target="_blank">
-            safetrip.co.th
-        </a>
-    </p>
-
-    <p class="contact-line">
-        <strong>WhatsApp:&nbsp;</strong>
-        <a href="https://wa.me/66809727188" target="_blank">
-            Khun Lek (+66 80 972 7188)
-        </a>
-    </p>
-
-</div>
-
-    </div>
-
-</div>
-
-    <p class="planner-note">
-
-        Should your plans change, please let us know by the
-        <strong>end of September</strong>
-        so we can update your accommodation and transport arrangements where possible.
-
-    <p class="planner-note">
-
-    Should your plans change, please let us know by the
-    <strong>end of September</strong>
-    so we can update your accommodation and transport arrangements where possible.
-
-</p>
-
-<button id="backButton">
-
-    Return to Guest Concierge
-
-</button>
-
-<button id="websiteButton">
-
-    Back to Wedding Website
-
-</button>
-
-</div> <!-- paper-inner -->
-
-</section>
-
-</div>
-
-<script src="config.js"></script>
-<script src="script.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
