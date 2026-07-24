@@ -24,7 +24,7 @@ body{
 
     font-family:"Cormorant Garamond",serif;
 
-    min-height:100vh;
+    min-height:100svh;
 
     overflow-x:hidden;
 
@@ -39,14 +39,15 @@ body{
 
     position:fixed;
 
-    inset:0;
+    top:-20px;
+    left:-20px;
+    right:-20px;
+    bottom:-20px;
 
     background-image:url("images/background.png");
 
     background-size:cover;
-
-    background-position:center center;
-
+    background-position:center;
     background-repeat:no-repeat;
 
     z-index:-2;
@@ -74,7 +75,7 @@ body{
 
     width:100%;
 
-    min-height:100vh;
+    min-height:100svh;
 
     padding:40px 20px;
 
@@ -85,7 +86,7 @@ body{
 ========================================== */
 .paper{
 
-    width:min(760px,55vw);
+    width:min(760px,92vw);
 
     margin:0 auto;
 
@@ -117,7 +118,7 @@ body{
 
 .paper-inner{
 
-    padding:60px 95px 100px;
+    padding:60px 95px 120px;
 
 }
 
@@ -1059,7 +1060,7 @@ button:hover{
 
     .paper-inner{
 
-        padding:40px 24px 50px;
+        padding:42px 24px 60px;
 
     }
 
@@ -1143,13 +1144,9 @@ button:hover{
     button{
 
         width:100%;
-
         min-width:0;
-
         max-width:100%;
-
         height:54px;
-
         font-size:18px;
 
     }
@@ -1163,7 +1160,6 @@ button:hover{
     .section h2{
 
         font-size:17px;
-
         margin-bottom:16px;
 
     }
@@ -1176,8 +1172,7 @@ button:hover{
 
     .stay-dates{
 
-        font-size:19px;
-
+        font-size:20px;
         margin-bottom:18px;
 
     }
@@ -1185,11 +1180,8 @@ button:hover{
     .row{
 
         flex-direction:column;
-
         align-items:flex-start;
-
         gap:6px;
-
         padding:12px 0;
 
     }
@@ -1202,25 +1194,55 @@ button:hover{
 
     .row span:last-child{
 
-        font-size:19px;
-
+        font-size:20px;
         text-align:left;
+        line-height:1.5;
+
+    }
+
+    .subsection-text,
+    #extendStayText{
+
+        font-size:19px;
+        line-height:1.75;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+
+    }
+
+    .contact-line{
+
+        font-size:19px;
+        line-height:1.8;
+
+    }
+
+    .contact-line a{
+
+        overflow-wrap:anywhere;
+        word-break:break-word;
 
     }
 
     .planner-note{
 
-        font-size:16px;
+        font-size:17px;
+        line-height:1.75;
 
     }
 
     #backButton{
 
         width:100%;
-
         max-width:none;
-
         margin-top:42px;
+
+    }
+
+    #websiteButton{
+
+        width:100%;
+        max-width:none;
 
     }
 
@@ -1240,7 +1262,7 @@ button:hover{
 
     .paper-inner{
 
-        padding:34px 20px 42px;
+        padding:36px 20px 56px;
 
     }
 
@@ -1262,6 +1284,7 @@ button:hover{
     .transport-note{
 
         font-size:18px;
+        line-height:1.7;
 
     }
 
@@ -1274,7 +1297,6 @@ button:hover{
     button{
 
         font-size:17px;
-
         height:50px;
 
     }
@@ -1287,7 +1309,7 @@ button:hover{
 
     .stay-dates{
 
-        font-size:15px;
+        font-size:17px;
 
     }
 
@@ -1299,18 +1321,32 @@ button:hover{
 
     .row span:last-child{
 
+        font-size:19px;
+        line-height:1.5;
+
+    }
+
+    .subsection-text,
+    #extendStayText{
+
+        font-size:18px;
+
+    }
+
+    .contact-line{
+
         font-size:18px;
 
     }
 
     .planner-note{
 
-        font-size:15px;
+        font-size:16px;
+        line-height:1.7;
 
     }
 
 }
-
 
 /* ==========================================
    ACCESSIBILITY
