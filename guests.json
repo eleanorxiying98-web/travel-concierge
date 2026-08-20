@@ -276,21 +276,21 @@
     "name": "Savanna Gan",
     "hotel": "Grand Wara",
     "room": 19.0,
-    "arrival": 19.0,
+    "arrival": "N/A",
     "departure": 20.0
   },
   {
     "name": "Joli Cheah",
     "hotel": "Grand Wara",
     "room": 19.0,
-    "arrival": 19.0,
+    "arrival": "N/A",
     "departure": 20.0
   },
   {
     "name": "Desiree Lee",
     "hotel": "Grand Wara",
     "room": 19.0,
-    "arrival": 19.0,
+    "arrival": "N/A",
     "departure": 20.0
   },
   {
@@ -332,21 +332,21 @@
     "name": "Marcus Ong",
     "hotel": "Grand Wara",
     "room": 22.0,
-    "arrival": 19.0,
+    "arrival": "N/A",
     "departure": 20.0
   },
   {
     "name": "Xu Hui Chan",
     "hotel": "Grand Wara",
     "room": 22.0,
-    "arrival": 19.0,
+    "arrival": "N/A",
     "departure": 20.0
   },
   {
     "name": "Keith Lim",
     "hotel": "Grand Wara",
     "room": 22.0,
-    "arrival": 19.0,
+    "arrival": "N/A",
     "departure": 20.0
   },
   {
@@ -360,6 +360,20 @@
     "name": "Tan De Xun",
     "hotel": "Grand Wara",
     "room": 23.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+  {
+    "name": "Lionel Tng",
+    "hotel": "Grand Wara",
+    "room": 24.0,
+    "arrival": 19.0,
+    "departure": 20.0
+  },
+    {
+    "name": "Jazryl Lee",
+    "hotel": "Grand Wara",
+    "room": 24.0,
     "arrival": 19.0,
     "departure": 20.0
   },
@@ -483,13 +497,6 @@
     "departure": 20.0
   },
   {
-    "name": "See Hoe Lim",
-    "hotel": "Movenpick",
-    "room": "Deluxe King 3 - 3111",
-    "arrival": 19.0,
-    "departure": 20.0
-  },
-  {
     "name": "Soh Lay Bing",
     "hotel": "Movenpick",
     "room": "Penthouse 1 - 3204",
@@ -535,13 +542,6 @@
     "name": "Peggy Teo",
     "hotel": "Movenpick",
     "room": "Penthouse 1 - 3204",
-    "arrival": 19.0,
-    "departure": 20.0
-  },
-  {
-    "name": "Rosalind Tan",
-    "hotel": "Movenpick",
-    "room": "Deluxe King 3 - 3111",
     "arrival": 19.0,
     "departure": 20.0
   },
