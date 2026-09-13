@@ -432,6 +432,7 @@
     "hotel": "Movenpick",
     "room": "Executive Deluxe 4 - 3101",
     "arrival": "N/A",
+    "checkin": "18"
     "departure": 20.0
   },
   {
@@ -439,6 +440,7 @@
     "hotel": "Movenpick",
     "room": "Executive Deluxe 4 - 3101",
     "arrival": "N/A",
+    "checkin": "18"
     "departure": 20.0
   },
   {
@@ -474,6 +476,7 @@
     "hotel": "Movenpick",
     "room": "Deluxe King 1 - 3102",
     "arrival": "N/A",
+    "checkin": "18"
     "departure": 20.0
   },
   {
