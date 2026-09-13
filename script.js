@@ -103,29 +103,21 @@ function getArrivalDate(guest){
     const checkin = clean(guest.checkin);
 
     if(checkin.includes("18")){
-
         return "18 December 2026";
-
     }
 
     if(checkin.includes("19")){
-
         return "19 December 2026";
-
     }
 
     const transport = clean(guest.arrival);
 
     if(transport.includes("18")){
-
         return "18 December 2026";
-
     }
 
     if(transport.includes("19")){
-
         return "19 December 2026";
-
     }
 
     return "19 December 2026";
