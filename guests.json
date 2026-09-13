@@ -66,7 +66,7 @@
     "name": "Cheryl Long",
     "hotel": "Grand Wara",
     "room": 5.0,
-    "arrival": "19 - TBC",
+    "arrival": 18.0,
     "departure": 20.0
   },
   {
@@ -512,20 +512,6 @@
   },
   {
     "name": "Denise Goh",
-    "hotel": "Movenpick",
-    "room": "Penthouse 1 - 3204",
-    "arrival": 19.0,
-    "departure": 20.0
-  },
-  {
-    "name": "Amanda Goh",
-    "hotel": "Movenpick",
-    "room": "Penthouse 1 - 3204",
-    "arrival": 19.0,
-    "departure": 20.0
-  },
-  {
-    "name": "Ben Ng",
     "hotel": "Movenpick",
     "room": "Penthouse 1 - 3204",
     "arrival": 19.0,
