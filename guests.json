@@ -75,21 +75,21 @@
     "hotel": "Grand Wara",
     "room": 6.0,
     "arrival": 19.0,
-    "departure": 20.0
+    "departure": "N/A"
   },
   {
     "name": "Matilda Lim",
     "hotel": "Grand Wara",
     "room": 6.0,
     "arrival": 19.0,
-    "departure": 20.0
+    "departure": "N/A"
   },
   {
     "name": "Mikael Lim",
     "hotel": "Grand Wara",
     "room": 6.0,
     "arrival": 19.0,
-    "departure": 20.0
+    "departure": "N/A"
   },
   {
     "name": "Jeddy Yew",
